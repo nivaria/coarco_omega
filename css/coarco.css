@@ -1,0 +1,35 @@
+body.prices-hidden div.field-name-field-pvp,
+body.prices-hidden div.field-name-commerce-price {
+  display: none;
+}
+
+body.prices-visible div.field-name-field-pvp,
+body.prices-visible div.field-name-commerce-price {
+  display: block;
+}
+
+
+#coarco-catalog-product-family-search-form > div {
+  clear: both;
+  overflow: hidden;
+}
+
+#coarco-catalog-product-family-search-form div.form-item,
+#coarco-catalog-product-family-search-form input.form-submit {
+  float: left;
+}
+
+.filter-wrapper,
+.date-wrapper {
+  overflow: hidden;
+}
+
+.filter-wrapper div.form-item {
+  float: left;
+  margin-right: 0.5em;
+}
+
+.date-wrapper .container-inline-date {
+  float: left;
+  clear: none;
+}
