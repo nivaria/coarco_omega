@@ -33,3 +33,6 @@ body.prices-visible div.field-name-commerce-price {
   float: left;
   clear: none;
 }
+#messages{
+  display:none;
+}

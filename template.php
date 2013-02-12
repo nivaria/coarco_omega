@@ -21,4 +21,6 @@ function coarco_omega_preprocess_html(&$vars) {
   if (isset($_GET['overlay']) && $_GET['overlay'] == 'true') {
     $vars['theme_hook_suggestions'][] = 'html__overlay';
   }
+  
+  drupal_add_css("http://fonts.googleapis.com/css?family=Exo","external");
 }
