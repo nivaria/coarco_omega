@@ -262,28 +262,38 @@ textarea:active {
     padding-left: 10px;
     padding-right: 30px;
 }
-#zone-menu-wrapper .link-productos:hover {
-  background-color: #004677;
+#page .om-link:hover,
+#page .om-link:hover a,
+#page .om-maximenu-middle,
+#page .om-maximenu-middle a{
+  color:#fff;
+  font-family:exo;
 }
-#om-menu-productos-ul-wrapper .om-maximenu-content {
+#page .om-link.over,
+#page .om-link:hover {
+  background-color: #004677;
+  color:#fff;
+}
+#page .om-maximenu-content {
   background-color: #004677;
   left: -10px;
   padding: 0;
   top: 44px;
   width: 815px;
 }
-#om-menu-productos-ul-wrapper .om-maximenu-middle {
+#page .om-maximenu-middle {
   background-color: #004677;
   padding: 50px 20px;
   overflow: hidden;
 }
-#om-menu-productos-ul-wrapper .om-maximenu-arrow,
-#om-menu-productos-ul-wrapper .om-maximenu-top,
-#om-menu-productos-ul-wrapper .om-maximenu-bottom {
+
+#page .om-maximenu-arrow,
+#page .om-maximenu-top,
+#page .om-maximenu-bottom {
   display: none;
 }
-#om-menu-productos-ul-wrapper .om-maximenu-middle-right,
-#om-menu-productos-ul-wrapper .om-maximenu-middle-left {
+#page .om-maximenu-middle-right,
+#page .om-maximenu-middle-left {
   background-image: none;
   margin: 0;
   padding: 0;
@@ -370,6 +380,9 @@ textarea:active {
   margin-right: 16px;
   padding-right: 16px;
 }
+#block-coarco-generic-my-bookmarks-menu-block .my-bookmarks-menu a{
+    margin-right:0;
+}
 #block-om-maximenu-om-maximenu-2 .om-link.link-mi-cuenta {
   display: inline;
   float: none;
@@ -377,6 +390,51 @@ textarea:active {
   line-height: 100%;
   margin: 0;
   padding: 0;
+  
+    display: block;  
+    height: 44px;
+    line-height: 44px;
+    padding: 0 16px;
+}
+#page #om-menu-mi-cuenta .om-maximenu-content{    
+    left: auto;
+    min-width: 240px;
+    right: 40px;
+    width: 240px;
+    text-transform:capitalize;
+}
+#page #om-menu-mi-cuenta .om-maximenu-content ul{
+    margin:0;
+    padding:0;
+}
+#page #om-menu-mi-cuenta .om-maximenu-content ul li{
+    line-height: 24px;
+    margin: 0;
+    min-height: 24px;
+    padding: 0;
+}
+#page #om-menu-mi-cuenta .om-maximenu-content ul li a{
+    color: @link_default_color;
+    text-transform: uppercase;
+}
+#page #om-menu-mi-cuenta .om-maximenu-content ul ul{
+    margin-left:10px;
+}
+#page #om-menu-mi-cuenta .om-maximenu-content ul ul li a{
+    color: #fff;
+    text-transform: capitalize;
+}
+.my-messages-menu{
+    background-repeat:no-repeat;
+    background-image:url('../images/sprites.png');
+   background-position: -549px -133px;
+    border-bottom: 1px solid #FFFFFF;
+    display: block;
+    margin-bottom:12px;
+    padding-left: 35px;  
+}
+#page .om-maximenu-content .om-maximenu-middle {
+    padding:20px;
 }
 .branding-data {
   float: left;
