@@ -593,50 +593,6 @@ textarea:active {
     width: 100%;
     z-index: 10; 
 }
-.highlight_block {
-  background-color: #ee3b22;
-  border: 1px solid #DBE1E6;
-  border-radius: 12px 12px 12px 12px;
-  margin-bottom: 16px;
-  padding: 20px;
-  color: #fff;
-}
-.highlight_block .block_left_wing {
-  background-position: -208px -44px;
-  display: block;
-  left: -8px;
-  top: -13px;
-}
-.highlight_block .block_right_wing {
-  background-position: -218px -83px;
-  display: block;
-  right: -8px;
-  bottom: -13px;
-}
-.highlight_block .block_left_expand {
-  background-color: #fff;
-  display: block;
-  left: -8px;
-}
-.highlight_block .block_right_expand {
-  background-color: #fff;
-  display: block;
-  right: -8px;
-}
-.highlight_block a {
-  color: #fff;
-}
-.highlight_block h2 {
-  background-color: #FFFFFF;
-  margin-bottom: 8px;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding: 4px 20px;
-  position: relative;
-}
-.highlight_block h2 a {
-  color: #EE3B22;
-}
 .pinterest {
   background-color: #FFFFFF;
   border: 1px solid #DBE1E6;
@@ -709,7 +665,51 @@ textarea:active {
   display: block;
   right: -8px;
 }
-
+.pinterest {
+  margin-right: 16px;
+  padding: 20px;
+  width: 180px;
+  float: left;
+}
+.pinterest.view-mode-pinterest_wide{
+    width:260px;
+}
+.region-sidebar-second .pinterest,
+.region-sidebar-first .pinterest{
+    float:none;
+    width:auto;
+    margin-left:0;
+    margin-right:0;
+}
+.pinterest.count3,
+.pinterest.count6,
+.pinterest.count9 {
+  margin-right: 0;
+}
+.pinterest .field-name-field-imagen-destacada {
+  text-align: center;
+}
+.pinterest h2 {
+  background-color: transparent;
+  color: #000000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.pinterest h2 a {
+  color: #000000;
+}
+.pinterest .field-type-field-collection .field-item {
+  float: left;
+  padding-right: 0.2em;
+}
+.pinterest .field-name-body {
+  clear: both;
+  padding-top: 1em;
+}
+.pinterest .field-name-body .field-item p:last-child {
+  margin: 0;
+}
 
 
 .ofertas_block .block_right_wing {
@@ -751,6 +751,57 @@ textarea:active {
 .views-row-9 .pinterest.view-mode-pinterest,
 .views-row-12 .pinterest.view-mode-pinterest{
     margin-right:0;    
+}
+.highlight_block {
+  background-color: #ee3b22;
+  border: 1px solid #DBE1E6;
+  border-radius: 12px 12px 12px 12px;
+  margin-bottom: 16px;
+  padding: 20px;
+  color: #fff;
+}
+.highlight_block .block_left_wing {
+  background-position: -208px -44px;
+  display: block;
+  left: -8px;
+  top: -13px;
+}
+.highlight_block .block_right_wing {
+  background-position: -218px -83px;
+  display: block;
+  right: -8px;
+  bottom: -13px;
+}
+.highlight_block .block_left_expand {
+  background-color: #fff;
+  display: block;
+  left: -8px;
+}
+.highlight_block .block_right_expand {
+  background-color: #fff;
+  display: block;
+  right: -8px;
+}
+.highlight_block h2,
+.highlight_block h2 a,
+.highlight_block a {
+  color: #fff;
+}
+.highlight_block .field-name-field-subtitulo-destacado {
+  background-color: #FFFFFF;
+  margin-bottom: 8px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 4px 20px;
+  position: relative;
+  color: #EE3B22;
+}
+.highlight_block.field-name-field-subtitulo-destacado a {
+  color: #EE3B22;
+}
+.field-name-field-imagen-folleto{
+    margin-bottom: 1em;
+    text-align: center;
 }
 #section-footer {
   position: relative;
@@ -985,51 +1036,6 @@ tr.odd {
 #page .highlight_links li a {
   color: #fff;
   font-size: 16px;
-}
-.pinterest {
-  margin-right: 16px;
-  padding: 20px;
-  width: 180px;
-  float: left;
-}
-.pinterest.view-mode-pinterest_wide{
-    width:260px;
-}
-.region-sidebar-second .pinterest,
-.region-sidebar-first .pinterest{
-    float:none;
-    width:auto;
-    margin-left:0;
-    margin-right:0;
-}
-.pinterest.count3,
-.pinterest.count6,
-.pinterest.count9 {
-  margin-right: 0;
-}
-.pinterest .field-name-field-imagen-destacada {
-  text-align: center;
-}
-.pinterest h2 {
-  background-color: transparent;
-  color: #000000;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-.pinterest h2 a {
-  color: #000000;
-}
-.pinterest .field-type-field-collection .field-item {
-  float: left;
-  padding-right: 0.2em;
-}
-.pinterest .field-name-body {
-  clear: both;
-  padding-top: 1em;
-}
-.pinterest .field-name-body .field-item p:last-child {
-  margin: 0;
 }
 .add-to-cart-expandable {
   display: block;
