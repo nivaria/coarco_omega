@@ -87,6 +87,8 @@ textarea:active {
   font-family: exo;
   text-shadow: none;
 }
+
+/* BEGIN breadcrumbs */
 #breadcrumb {
   height: 20px;
   line-height: 20px;
@@ -111,6 +113,7 @@ textarea:active {
   padding-left: 16px;
   background-image: none;
 }
+#breadcrumb a:last-child,
 #breadcrumb span {
   background-color: #818285;
   background-image: url(../images/breadcrumbs_2.png);
@@ -125,6 +128,70 @@ textarea:active {
   padding-right: 16px;
   width: auto;
 }
+/* END breadcrumbs */
+
+/* BEGIN pager */
+.item-list .pager{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    margin: 1em 0;
+    overflow: hidden;
+    float:right;
+}
+.pager li{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.pager li a{
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    border-radius:0;
+}
+.pager li.pager-current{
+    background-color: #0073AF;
+    background-image: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.pager li.first{
+    
+}
+.pager li.pager-next{
+    border:0 none;
+    position:static;
+}
+.pager li.pager-last{
+    position:static;
+}
+.pager li.first a,
+.pager li.pager-next a,
+.pager li.pager-previous a,
+.pager li.pager-last a{
+    color:@link_default_color;
+    width:auto;
+    text-transform:cacapitalize;
+}
+.pager li.pager-previous a{
+    background-image:url('../images/sprites.png');
+    background-position:-897px -13px;
+    background-repeat:no-repeat;
+    margin-left: 1em;
+    padding-left: 6px;
+}
+.pager li.pager-next a{
+    background-image:url('../images/sprites.png');
+    background-position:-936px -40px;
+    background-repeat:no-repeat;
+    margin-right: 1em;
+    padding-right: 6px;
+}
+/* END pager */
+
 #page {
   margin: 0 auto;
   position: relative;
