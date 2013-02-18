@@ -60,7 +60,7 @@
 							<table border="0" cellpadding="0" cellspacing="0" >
 								<tr>
 									<td width="620" height="126">
-										<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="http://casasreal.nivaria.com/sites/all/themes/casasrealprod/images/logo-for-newsletter.png" alt="<?php print t('Home'); ?>" /></a>
+										<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="http://coarco.nivaria.com/sites/all/themes/coarco_omega/images/logo-for-newsletter.png" alt="<?php print t('Home'); ?>" /></a>
 									</td>
 								</tr>
 							</table>
@@ -80,7 +80,7 @@
 							<table border="0" cellpadding="20" cellspacing="0" width="620" >
 								<tr>
 									<td valign="top" bgcolor="#000" >
-										<a href="/" style="color: #ccc;font-size:11px;font-family:arial;text-transform:upppercase;text-decoration:none;">Casas del Camino Real</a>
+										<a href="/" style="color: #ccc;font-size:11px;font-family:arial;text-transform:upppercase;text-decoration:none;">Coarco</a>
 									</td>
 								</tr>
 							</table>
