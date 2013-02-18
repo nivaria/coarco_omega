@@ -36,3 +36,9 @@ function coarco_omega_breadcrumb($variables) {
     return $output;
   }
 }
+
+function coarco_omega_preprocess_mimemail_message(&$variables) {
+  global $base_url;
+  $variables['logo'] = $base_url . theme_get_setting('logo');
+  $variables['front_page'] = url();
+}
