@@ -106,7 +106,7 @@ textarea:active {
     float: left;
     font-family: exo;
     font-size: 12px;
-    padding: 2px 32px 0 0;
+    padding: 0 32px 0 0;
     text-transform: uppercase;
     background-color: #A3A5A8;
 }
@@ -126,6 +126,8 @@ textarea:active {
     position: relative;
     text-transform: uppercase;
     width: auto;
+    padding-top:2px;
+    font-size:12px;
 }
 .breadcrumb:after{
     background-image: url(../images/breadcrumbs_3.png);
@@ -608,6 +610,7 @@ textarea:active {
   position: absolute;
   top: 0;
 }
+body.page-ofertas #region-sidebar-first .default_block,
 #block-views-contenido-destacado-home-block .node,
 #region-sidebar-second .block,
 .default_block {
@@ -954,6 +957,7 @@ textarea:active {
 }
 #region-footer-first a {
   color: #fff;
+  background-image:none;
 }
 #region-footer-second {
   background-color: #0073AF;
@@ -1130,6 +1134,24 @@ tr.odd {
 #page tr td:last-child {
   border-radius: 0 6px 6px 0;
 }
+#page table .views-field-commerce-price .commerce-price{
+    display: block;
+}
+#page table .views-field-commerce-price .field-pvp-recomendado{
+    text-decoration: line-through;
+    display:block;
+}
+#page table .views-field-field-product #edit-line-item-fields{
+    float: left;
+    margin-right: 1em;
+}
+#page table .views-field-field-product .form-item-quantity{
+    float: left;
+    margin-right: 1em;
+}
+#page table .views-field-field-product #edit-submit{
+    
+}
 .highlight_links ul {
   padding: 24px;
   background-repeat: repeat;
@@ -1156,6 +1178,7 @@ tr.odd {
   color: #fff;
   font-size: 16px;
 }
+#page table .views-field-field-product #edit-submit,
 .add-to-cart-expandable {
   display: block;
   background-image: url(../images/sprites.png);
@@ -1167,6 +1190,12 @@ tr.odd {
   cursor: pointer;
   float: right;
   text-indent: -9999px;
+}
+#page table .views-field-field-product #edit-submit{
+   background-color: transparent;
+    clear: none;
+    float: left;
+    margin-top: 12px;
 }
 .flag-action {
   display: block;
@@ -1260,7 +1289,7 @@ tr.odd {
   line-height: 32px;
 }
 #page .views-exposed-widgets .views-exposed-widget {
-  padding: 0;
+  padding: 0 0 0 1em;
 }
 #edit-search-api-views-fulltext-wrapper {
   width: 372px;
@@ -1278,10 +1307,7 @@ tr.odd {
   font-weight: normal;
 }
 .view-product-search .view-footer{
-        float: left;
     font-size: 12px;
-    margin-top: -30px;
-    padding: 0;
 }
 #page .views-exposed-widgets select {
   margin-left: 1em;
@@ -1319,6 +1345,10 @@ body.node-type-product-display .ds-product-left {
 body.node-type-product-display .field-slideshow {
   width: 302px !important;
   background-color: #fff;
+  text-align:center;
+}
+body.node-type-product-display .field-slideshow .field-slideshow-slide{
+  width: 302px !important;
 }
 body.node-type-product-display .field-slideshow-controls a.prev,
 body.node-type-product-display .field-slideshow-controls a.next {
@@ -1429,11 +1459,15 @@ a.print-page {
   width: 59px;
   height: 72px;
   display: block;
-  background-position: -821px -45px;
-  margin: 0 auto;
+  background-position: -561px -374px;
+  margin: 0 auto 0 2em;
+  float:left;
 }
 a.print-page img {
   display: none;
+}
+.quicktabs-wrapper{
+    margin-bottom:1em;
 }
 body.node-type-product-display .flag-action {
   display: block;
@@ -1444,6 +1478,18 @@ body.node-type-product-display .flag-action {
   background-position: -754px -45px;
   float: none;
   margin: 0 auto;
+  
+    background-position: -561px -270px;
+    background-repeat: no-repeat;
+    color: #666666;
+    display: block;
+    float: left;
+    height: 42px;
+    margin: 0 auto 0 2em;
+    padding-left: 52px;
+    padding-top: 20px;
+    text-indent: 0;
+    width: 108px;
 }
 body.node-type-product-display #page .commerce-add-to-cart .form-submit {
   background-image: url(../images/sprites.png);
