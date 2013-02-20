@@ -76,7 +76,6 @@ textarea:active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.node-links ul li a,
 .comment-links ul li a,
 #page .form-submit {
   background-color: #EE3B22;
@@ -952,10 +951,11 @@ body.page-ofertas #region-sidebar-first .default_block,
     margin-bottom: 1em;
     margin-right: 1em;
 }
-.view-noticias .views-row{
+.std-list .views-row{
     clear:both;
-    border-top: 1px solid #CCCCCC;
+    border-top: 1px solid #DBE1E6;
     padding-top: 1em;
+    margin-top:1em;
 }
 .view-noticias .date-display-single{
     color: #999999;
@@ -964,9 +964,10 @@ body.page-ofertas #region-sidebar-first .default_block,
 .view-noticias .field-name-title h2{
     font-size:16px;
 }
-.view-noticias .views-row:first-child{
+.std-list .views-row:first-child{
     border:0 none;
     padding-top:0;
+    margin:0;
 }
 .view-noticias .node-teaser .group-left{
     width:auto;
@@ -1509,7 +1510,7 @@ body.node-type-product-display .field-name-field-alias .field-item:before {
 body.node-type-product-display .field-name-field-alias .field-item:first-child:before {
   content: none;
 }
-a.print-page {
+body.node-type-product-display a.print-page {
   background-image: url(../images/sprites.png);
   background-repeat: no-repeat;
   width: 59px;
@@ -1519,7 +1520,7 @@ a.print-page {
   margin: 0 auto 0 2em;
   float:left;
 }
-a.print-page img {
+body.node-type-product-display a.print-page img {
   display: none;
 }
 .quicktabs-wrapper{
@@ -1730,4 +1731,16 @@ body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value-wrapp
     font-size:16px;
     margin-bottom:0.3em;
 }
-
+#block-views-buscador-de-ferreterias-block-3{
+    margin-top:1em;
+}
+#block-views-buscador-de-ferreterias-block-3 .views-exposed-form{
+    padding-bottom:42px;
+    position:relative;
+}
+#block-views-buscador-de-ferreterias-block-3 .views-exposed-form .views-widget-per-page{
+    left: 16px;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+}
