@@ -572,12 +572,18 @@ textarea:active {
   left: 1px;
   top: -13px;
 }
+.field-slideshow-pager,
 .slideshow-nav{
     bottom: 64px;
     position: absolute;
     right: 16px;
     z-index:10;
 }
+.field-slideshow-pager{
+    bottom:24px;
+    right:24px;
+}
+.field-slideshow-pager a,
 .slideshow-nav a{
     display:inline-block;
     color:#fff;
@@ -585,12 +591,24 @@ textarea:active {
     text-align:center;
     padding-left:0.4em;
 }
+.field-slideshow-pager a:after,
 .slideshow-nav a:after{
     content:' ';
     background-color:#fff;
     border-radius:20px;
     width:12px;
     height:12px;
+    display:block;
+}
+.field-name-field-imagenes-noticia{
+    margin-top:1em;
+    margin-bottom:1em;
+    position:relative;
+}
+body.node-type-noticia a.print-page{
+    background-color:transparent;
+}
+body.node-type-noticia a.print-page img{
     display:block;
 }
 .block_left_wing,
@@ -920,10 +938,48 @@ body.page-ofertas #region-sidebar-first .default_block,
     margin-bottom: 1em;
     text-align: center;
 }
+.view-folletos .field-name-field-imagen-folleto{
+    float:left;
+}
+.view-folletos .views-row{
+    clear:both;
+}
+.view-folletos .field-name-title h2{
+    margin-bottom:0;
+}
 .field-name-field-imagen-page{
     float: left;
     margin-bottom: 1em;
     margin-right: 1em;
+}
+.view-noticias .views-row{
+    clear:both;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 1em;
+}
+.view-noticias .date-display-single{
+    color: #999999;
+    font-size: 11px;
+}
+.view-noticias .field-name-title h2{
+    font-size:16px;
+}
+.view-noticias .views-row:first-child{
+    border:0 none;
+    padding-top:0;
+}
+.view-noticias .node-teaser .group-left{
+    width:auto;
+    margin-right:1em;
+}
+.view-noticias .node-teaser .group-right{
+    float:none;
+    width:auto;
+}
+#block-views-contenidos-destacados-block.block{
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
 }
 #section-footer {
   position: relative;
@@ -1638,6 +1694,17 @@ body.front h1 {
 #block-views-equipo-block h2.block-title{
     margin-bottom:20px;
 }
+body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value,
+body.page-ferreterias-asociadas #edit-circle-location{
+    width:100px;
+}
+body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value-wrapper .views-widget .form-item,
+body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value-wrapper .views-widget{
+    display:inline;
+}
+.view-content{
+    clear:both;
+}
 /* bloque equipo */
 .block-equipo-block{
     border-top: 1px solid #7995A9;
@@ -1663,3 +1730,4 @@ body.front h1 {
     font-size:16px;
     margin-bottom:0.3em;
 }
+
