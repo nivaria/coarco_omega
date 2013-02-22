@@ -15,6 +15,14 @@ function coarco_omega_preprocess_page(&$vars) {
   if (isset($_GET['overlay']) && $_GET['overlay'] == 'true') {
     $vars['theme_hook_suggestions'][] = 'page__overlay';
   }
+  if (isset($vars['node']) && $vars['node']->type == "empresa") {
+    $title = isset($vars['node']->field_nombre_comercial_empresa[LANGUAGE_NONE]) ?
+      $vars['node']->field_nombre_comercial_empresa[LANGUAGE_NONE][0]['value']
+      :
+      $vars['node']->title;
+    drupal_set_title($title);
+    $vars['title'] = $title;
+  }  
 }
 
 function coarco_omega_preprocess_html(&$vars) {
