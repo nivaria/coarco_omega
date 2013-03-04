@@ -28,7 +28,7 @@ function coarco_omega_preprocess_page(&$vars) {
       drupal_set_breadcrumb($breadcrumb);
     }
   }
-  else {
+  else if (!drupal_is_front_page ()) {
     $breadcrumb[] = drupal_get_title();
     drupal_set_breadcrumb($breadcrumb);
   }
