@@ -318,6 +318,53 @@ textarea:active {
   width: 200px;
   margin-bottom: 16px;
 }
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row .ds-center{
+  position:relative;
+  padding-left:60px;
+}
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row .ds-center:before{
+  content:' ';
+  display:block;
+  width:52px;
+  height:52px;
+  background-repeat:no-repeat;
+  background-image:url('../images/sprites.png');
+  position:absolute;
+  left:0;
+  top:4px;
+}
+/* Ferreteria */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-1 .ds-center:before{
+  background-position:-20px -413px;
+}
+/* Menaje */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-3 .ds-center:before{
+  background-position:-97px -413px;
+}
+/* Construccion */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-5 .ds-center:before{
+  background-position:-174px -413px;
+}
+/* Jardin */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-2 .ds-center:before{
+  background-position:-248px -413px;
+}
+/* Banos */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-6 .ds-center:before{
+  background-position:-334px -413px;
+}
+/* Electrodomesticos */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-7 .ds-center:before{
+  background-position:-409px -413px;
+}
+/* Quimicos */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-4 .ds-center:before{
+  background-position:-18px -487px;
+}
+/* Animales */
+#om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-8 .ds-center:before{
+  background-position:-94px -487px;
+}
 #om-menu-productos-ul-wrapper .om-maximenu-middle .views-row.views-row-5{
     clear:both;
 }
@@ -526,6 +573,11 @@ textarea:active {
   text-shadow: none;
   width: 80px;
 }
+
+/* BEGIN slideshow home */
+#block-views-slideshow-portada-block{
+    position:relative;
+}
 .view-slideshow-portada .views-row,
 .view-slideshow-portada .views_slideshow_cycle_slide {
   width: 640px;
@@ -599,6 +651,8 @@ textarea:active {
     height:12px;
     display:block;
 }
+/* END slideshow home */
+
 .field-name-field-imagenes-noticia{
     margin-top:1em;
     margin-bottom:1em;
@@ -649,7 +703,7 @@ body.page-ofertas #region-sidebar-first .default_block,
   padding-top: 12px;
 }
 .ofertas_block .block-inner{
-    background-image:url('../images/gallery_footer_bg.png');
+    background-image:url('../images/offers_block_bg.png');
     background-repeat:repeat;
     color: #FFFFFF;
     font-family: exo;
@@ -660,14 +714,16 @@ body.page-ofertas #region-sidebar-first .default_block,
     padding-bottom:0;
 }
 .ofertas_block .block-inner h2{
-    border-bottom: 1px solid #FFFFFF;
-    margin-bottom: 0.4em;
-    padding-bottom: 0.3em;
     background-image:url('../images/sprites.png');
-    background-position:-3px -130px;
-    background-repeat:no-repeat;
+    background-position: -3px -130px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 46px;
+    margin-bottom: 0.2em;
+    padding-bottom: 0.2em;
     text-indent: 47px;
-    font-size: 32px;
 }
 #region-sidebar-first .ofertas_block .block-inner h2{
     font-size: 24px;
@@ -685,7 +741,7 @@ body.page-ofertas #region-sidebar-first .default_block,
     display:block;
     position: absolute;
     right: 38px;
-    top: 26px;
+    top: 24px;
 }
 #region-sidebar-first .ofertas_block .block-inner h2:after{
     top:24px;
@@ -694,6 +750,9 @@ body.page-ofertas #region-sidebar-first .default_block,
 .ofertas_block .block-inner a{
     color:#fff;
     font-family:exo;
+}
+.ofertas_block .block-inner .field-name-body{
+    font-weight:bold;
 }
 .ofertas_block .block-inner .field-name-field-enlace-bloque a{
     cursor: pointer;
@@ -709,6 +768,8 @@ body.page-ofertas #region-sidebar-first .default_block,
     background-image:none;
     padding:0;
 }
+/* END bloque ofertas */
+
 .pinterest.node-product-display {
   background-color: #FFFFFF;
   border: 1px solid #DBE1E6;
