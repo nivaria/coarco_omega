@@ -1530,7 +1530,23 @@ tr.odd {
   margin-left: -32px;
   margin-right: -32px;
 }
+#page .highlight_links li:first-child:before{
+  top:2px;
+}
+#page .highlight_links li:before{
+  display:block;
+  width:17px;
+  height:21px;
+  content:' ';
+  position:absolute;
+  left:0;
+  top:15px;
+  background-image:url('../images/sprites.png');
+  background-repeat:no-repeat;
+  background-position:-605px -142px;
+}
 #page .highlight_links li {
+  position:relative;
   list-style: none;
   margin: 0;
   font-family: exo;
@@ -1538,11 +1554,14 @@ tr.odd {
   border-top: 1px solid #fff;
   margin-top: 1em;
   padding-top: 1em;
+  
+  padding-left:30px;
 }
 #page .highlight_links li:first-child {
   border: 0 none;
   margin: 0;
   padding: 0;
+  padding-left:30px;
 }
 #page .highlight_links li a {
   color: #fff;
@@ -2057,6 +2076,43 @@ body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value-wrapp
 .view-content{
     clear:both;
 }
+
+ul.primary li {
+    display: block;
+    float: left;
+    margin-bottom: 4px;
+}
+
+/* BEGIN detalle de ferreteria */
+body.node-type-empresa .node-empresa .ds-top,
+body.node-type-empresa .node-empresa .ds-center,
+body.node-type-empresa .node-empresa .ds-bottom{
+    background-color: #FFFFFF;
+    border: 1px solid #DBE1E6;
+    border-radius: 12px 12px 12px 12px;
+    margin-bottom: 16px;
+    padding: 20px;
+    overflow:hidden;
+}
+body.node-type-empresa .field-name-field-horario-empresa .field-label,
+body.node-type-empresa .field-name-field-ol-locator-address .field-label,
+body.node-type-empresa .group-empresa-contacto .fieldset-legend{
+  color:#004677;
+  font-family:exo;
+  font-size:14px;
+  font-weight:bold;
+}
+body.node-type-empresa .field-name-campo-mapa{
+  margin-top:1em;
+}
+body.node-type-empresa .group-empresa-contacto,
+body.node-type-empresa .field-name-field-horario-empresa{
+  float:left;
+  width:50%;
+  margin:0;
+}
+/* END detalle de ferreteria */
+
 /* bloque equipo */
 .block-equipo-block{
     border-top: 1px solid #7995A9;
