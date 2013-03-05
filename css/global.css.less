@@ -220,6 +220,9 @@ textarea:active {
 #section-content {
   padding-top: 239px;
 }
+body.front #section-content{
+  padding-top:280px;
+}
 #zone-user {
   background-color: #004677;
   height: 14px;
@@ -1134,9 +1137,22 @@ body.node-type-equipo .field-type-file img,
   height: 21px;
   float: right;
 }
-.mapa-ferreterias-isla {
+/* BEGIN bloque Encuentra tu ferreteria */
+#block-coarco-empresas-mapa-ferreterias-isla h2.block-title{
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+#block-coarco-empresas-mapa-ferreterias-isla .item-list{
+    background-color: #F4F4F3;
+    border-radius: 12px 12px 12px 12px;
+    padding: 12px;
+    margin-bottom:1em;
+}
+#block-coarco-empresas-mapa-ferreterias-isla .item-list .mapa-ferreterias-isla {
   position: relative;
   height: 112px;
+  margin:0;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li {
   background-color: #EE3B22;
@@ -1149,55 +1165,76 @@ body.node-type-equipo .field-type-file img,
   width: 30px;
   position: absolute;
   margin: 0;
+  
+  font-weight:bold;
+  font-family:exo;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#el-hierro {
   width: 28px;
   height: 28px;
-  line-height: 28px;
+  line-height: 30px;
   top: 70px;
-  left: 2px;
+  left: 12px;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#fuerteventura {
   width: 45px;
   height: 45px;
-  line-height: 45px;
+  line-height: 47px;
   top: 36px;
-  left: 139px;
+  left: 149px;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#gran-canaria {
   width: 48px;
   height: 48px;
-  line-height: 48px;
+  line-height: 50px;
   top: 48px;
-  left: 85px;
+  left: 95px;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#la-gomera {
   width: 28px;
   height: 28px;
-  line-height: 28px;
+  line-height: 30px;
   top: 43px;
-  left: 25px;
+  left: 35px;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#la-palma {
   width: 33px;
   height: 33px;
-  line-height: 33px;
+  line-height: 35px;
   top: 0px;
-  left: 0px;
+  left: 10px;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#lanzarote {
   width: 36px;
   height: 36px;
-  line-height: 36px;
+  line-height: 38px;
   top: 0px;
-  left: 153px;
+  left: 163px;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#tenerife {
   width: 50px;
   height: 50px;
-  line-height: 50px;
+  line-height: 52px;
   top: 5px;
-  left: 47px;
+  left: 57px;
+}
+.count-minus5{
+  
+}
+.count-5-10{
+  font-size:16px;
+}
+.count-10-20{
+  font-size:18px;
+}
+.count-20-40{
+  font-size:20px;
+}
+.count-40-60{
+  font-size:22px;
+}
+.count-plus60{
+  font-size:24px;
 }
 #coarco-empresas-ferreterias-isla-form > div {
   background-color: #F4F4F3;
@@ -1213,8 +1250,30 @@ body.node-type-equipo .field-type-file img,
 }
 #coarco-empresas-ferreterias-isla-form #edit-location {
   border: 0 none;
-  width: 167px;
+  width: 163px;
 }
+#coarco-empresas-ferreterias-isla-form .form-item-location{
+  position:relative;
+}
+#coarco-empresas-ferreterias-isla-form .form-item-location:after{
+  content:' ';
+  display:block;
+  position:absolute;
+  right: -65px;
+  top: 2px;
+  width:12px;
+  height:13px;
+  background-image:url('../images/sprites.png');
+  background-repeat:no-repeat;
+  background-position:-496px -48px; 
+}
+#coarco-empresas-ferreterias-isla-form .form-submit{
+  padding-right:16px;
+}
+
+/* END bloque Encuentra tu ferreteria */
+
+/* BEGIN estilos tablas */
 table {
   border: 0 none;
 }
@@ -1283,6 +1342,9 @@ tr.odd {
 #page table .views-field-field-product #edit-submit{
     
 }
+/* END estilos tablas */
+
+/* BEGIN enlaces destacados */
 .highlight_links ul {
   padding: 24px;
   background-repeat: repeat;
@@ -1309,6 +1371,8 @@ tr.odd {
   color: #fff;
   font-size: 16px;
 }
+/* END enlaces destacados */
+
 #page table .views-field-field-product #edit-submit,
 .add-to-cart-expandable {
   display: block;
