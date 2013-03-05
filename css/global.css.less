@@ -844,17 +844,11 @@ body.page-ofertas #region-sidebar-first .default_block,
   display: block;
   left: -8px;
 }
-.pinterest.red .block_left_expand {
-  background-color:#ee3b22;
-}
 .field-name-field-subtitulo-destacado .block_right_expand,
 .pinterest .block_right_expand {
   background-color: #004677;
   display: block;
   right: -8px;
-}
-.pinterest.red .block_right_expand {
-  background-color:#ee3b22;
 }
 .pinterest.node-product-display {
   margin-right: 16px;
@@ -916,10 +910,6 @@ body.page-ofertas #region-sidebar-first .default_block,
   font-weight:bold;
   font-family: exo;
 }
-.pinterest.red .field-name-field-subtitulo-destacado {
-  background-color:#ee3b22;
-  color:#fff;
-}
 .views-row-even .pinterest.node-product-display.view-mode-pinterest_wide {
   float: right;
   margin-right: 0;
@@ -964,6 +954,10 @@ body.page-ofertas #region-sidebar-first .default_block,
     margin: 0;
     padding: 0;
 }
+
+
+/* BEGIN bloque destacado */
+#page .pinterest.red,
 #page .highlight_block {
   background-color: #ee3b22;
   border: 1px solid #DBE1E6;
@@ -972,33 +966,41 @@ body.page-ofertas #region-sidebar-first .default_block,
   padding: 20px;
   color: #fff;
 }
+.pinterest.red .block_left_wing,
 .highlight_block .block_left_wing {
   background-position: -208px -44px;
   display: block;
   left: -8px;
   top: -13px;
 }
+.pinterest.red .block_right_wing,
 .highlight_block .block_right_wing {
   background-position: -218px -83px;
   display: block;
   right: -8px;
   bottom: -13px;
 }
+.pinterest.red .block_left_expand,
 .highlight_block .block_left_expand {
   background-color: #fff;
   display: block;
   left: -8px;
 }
+.pinterest.red .block_right_expand,
 .highlight_block .block_right_expand {
   background-color: #fff;
   display: block;
   right: -8px;
 }
+#page .pinterest.red h2,
+#page .pinterest.red h2 a,
+#page .pinterest.red a,
 #page .highlight_block h2,
 #page .highlight_block h2 a,
 #page .highlight_block a {
   color: #fff;
 }
+#page .pinterest.red .field-name-field-subtitulo-destacado,
 #page .highlight_block .field-name-field-subtitulo-destacado {
   background-color: #FFFFFF;
   margin-bottom: 8px;
@@ -1008,9 +1010,35 @@ body.page-ofertas #region-sidebar-first .default_block,
   position: relative;
   color: #EE3B22;
 }
-#page .highlight_block.field-name-field-subtitulo-destacado a {
+#page .pinterest.red .field-name-field-subtitulo-destacado a,
+#page .highlight_block .field-name-field-subtitulo-destacado a {
   color: #EE3B22;
 }
+/* END bloque destacado */
+
+/* BEGIN bloque destacado product display */
+#page .pinterest.red.node-product-display .block_left_expand {
+  background-color:#ee3b22;
+}
+#page .pinterest.red.node-product-display .block_right_expand {
+  background-color:#ee3b22;
+}
+#page .pinterest.red.node-product-display .field-name-field-subtitulo-destacado {
+  background-color:#ee3b22;
+  color:#fff;
+}
+#page .pinterest.red.node-product-display{
+    background-color: #FFFFFF;
+    border-radius: 0 0 0 0;
+    color: #666666;
+}
+#page .pinterest.red.node-product-display h2,
+#page .pinterest.red.node-product-display h2 a,
+#page .pinterest.red.node-product-display a{
+  color:#000;
+}
+/* END bloque destacado product display */
+
 .field-name-field-imagen-folleto{
     margin-bottom: 1em;
     text-align: center;
