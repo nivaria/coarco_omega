@@ -911,9 +911,16 @@ body.page-ofertas #region-sidebar-first .default_block,
 .pinterest.node-product-display h2 a {
   color: #000000;
 }
+.pintereset.node-product-display .field-type-taxonomy-term-reference,
+.pintereset.node-product-display .field-type-taxonomy-term-reference a{
+  color:##3F97B7;
+}
 .pinterest.node-product-display .field-type-field-collection .field-item {
   float: left;
   padding-right: 0.2em;
+}
+.pinterest.node-product-display .ds-bottom{
+  clear:both;
 }
 .pinterest.node-product-display .field-name-body {
   clear: both;
@@ -934,10 +941,102 @@ body.page-ofertas #region-sidebar-first .default_block,
   font-weight:bold;
   font-family: exo;
 }
+.pinterest.node-product-display .field-name-field-pvp-recomendado{
+  float: left;
+  margin-right: 0.5em;
+  margin-top: 0;
+  width:auto;
+}
+.pinterest.node-product-display .field-name-commerce-price{
+  clear: none;
+  float: left;
+  margin-right:0.5em;
+}
+.pinterest.node-product-display form.commerce-expandable-add-to-cart{
+   border-top: 1px solid #DBE1E6;
+    display: block;
+    left: 20px;
+    margin-top: 48px;
+    padding-top: 10px;
+    position: absolute;
+    width: 260px;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-submit{
+  background-image:url('../images/sprites.png');
+  background-repeat:no-repeat;
+  background-position:-20px -550px;
+  display:block;
+  width:186px;
+  height:37px;
+    background-color: transparent;
+    border: 0 none;
+    color: #000000;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 12px;
+    padding:0;
+    float:none;
+    clear:both;
+}
+#page .pinterest.view-mode-pinterest_wide.node-product-display form.commerce-expandable-add-to-cart .form-submit{
+  width:260px;
+  background-position: -226px -550px;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper{
+  float:left;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item{
+  margin-right: 1em;
+  margin-top: 0;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item label{
+  color:#000;
+  font-family:exo;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item select{
+  width: 174px;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity{
+  float:left;
+  margin-top:0;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity label{
+  color:#000;
+  font-family:exo;  
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity .form-text{
+  width:72px;
+}
+.pinterest.node-product-display .field-name-field-product.field-type-commerce-product-reference{
+  float: left;
+  margin-right: 0.5em;
+}
+.pinterest.node-product-display .field-name-field-product.field-type-commerce-product-reference .field-item.odd{
+  padding-bottom: 174px;
+}
+.pinterest.node-product-display  ul.links{
+  display:block;
+  float:left;
+  margin:0;
+}
+.pinterest.node-product-display  ul.links li{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.pinterest.node-product-display  ul.links li span,
+.pinterest.node-product-display  ul.links li a{
+  margin:0;
+  padding:0;
+}
+.views-row-odd .pinterest.node-product-display.view-mode-pinterest_wide {
+  clear:both;
+}
 .views-row-even .pinterest.node-product-display.view-mode-pinterest_wide {
   float: right;
   margin-right: 0;
 }
+
 .views-row-3 .pinterest.node-product-display.view-mode-pinterest,
 .views-row-6 .pinterest.node-product-display.view-mode-pinterest,
 .views-row-9 .pinterest.node-product-display.view-mode-pinterest,
@@ -1512,6 +1611,7 @@ tr.odd {
     height:36px;
     display:block;
     text-indent:-9999px;
+    margin:0.5em 0;
 }
 .field-name-commerce-price {
   clear: both;
@@ -1754,7 +1854,7 @@ body.node-type-product-display a.print-page img {
 .quicktabs-wrapper{
     margin-bottom:1em;
 }
-body.node-type-product-display .flag-action {
+body.node-type-product-display .ds-product-links .flag-action {
   display: block;
   background-image: url(../images/sprites.png);
   background-repeat: no-repeat;
@@ -1790,7 +1890,7 @@ body.node-type-product-display #page .commerce-add-to-cart .form-submit {
   text-align: left;
   text-indent: 12px;
 }
-body.node-type-product-display .field-name-field-product {
+body.node-type-product-display .ds-product-bottom .field-name-field-product {
   clear: both;
   margin-top: 4em;
 }
