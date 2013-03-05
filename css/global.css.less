@@ -1532,6 +1532,8 @@ tr.odd {
   height: 36px;
   width: 100px
 }
+
+/* BEGIN filtro lateral */
 .block.block-facetapi h2.block-title {
   border-bottom: 1px solid #004677;
   color: #004677;
@@ -1547,15 +1549,22 @@ tr.odd {
 .block.block-facetapi .item-list li {
   list-style: none;
   margin: 0;
-  padding: 4px;
+  padding: 2px;
   color: #000;
 }
 .block.block-facetapi .item-list li a {
   color: #000;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+.block.block-facetapi .item-list li a:first-letter{
+  text-transform:uppercase;
 }
 .block.block-facetapi .item-list li:nth-child(even) {
   background-color: #B5D6E8;
 }
+/* END filtro lateral */
+
 #page .views-exposed-widgets {
   border: 1px solid #C1C1C2;
   border-radius: 6px 6px 6px 6px;
