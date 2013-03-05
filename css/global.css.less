@@ -773,6 +773,7 @@ body.page-ofertas #region-sidebar-first .default_block,
 }
 /* END bloque ofertas */
 
+/* BEGIN pinterest block */
 .pinterest.node-product-display {
   background-color: #FFFFFF;
   border: 1px solid #DBE1E6;
@@ -838,16 +839,22 @@ body.page-ofertas #region-sidebar-first .default_block,
   top: -13px;
 }
 .field-name-field-subtitulo-destacado .block_left_expand,
-.pinterest.node-product-display .block_left_expand {
+.pinterest .block_left_expand {
   background-color: #004677;
   display: block;
   left: -8px;
 }
+.pinterest.red .block_left_expand {
+  background-color:#ee3b22;
+}
 .field-name-field-subtitulo-destacado .block_right_expand,
-.pinterest.node-product-display .block_right_expand {
+.pinterest .block_right_expand {
   background-color: #004677;
   display: block;
   right: -8px;
+}
+.pinterest.red .block_right_expand {
+  background-color:#ee3b22;
 }
 .pinterest.node-product-display {
   margin-right: 16px;
@@ -897,6 +904,40 @@ body.page-ofertas #region-sidebar-first .default_block,
 .pinterest.node-product-display .field-name-body .field-item p:last-child {
   margin: 0;
 }
+.field-name-field-subtitulo-destacado,
+.pinterest .field-name-field-subtitulo-destacado {
+  background-color: #004677;
+  margin-bottom: 8px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 4px 20px;
+  position: relative;
+  color: #ffffff;
+  font-weight:bold;
+  font-family: exo;
+}
+.pinterest.red .field-name-field-subtitulo-destacado {
+  background-color:#ee3b22;
+  color:#fff;
+}
+.views-row-even .pinterest.node-product-display.view-mode-pinterest_wide {
+  float: right;
+  margin-right: 0;
+}
+.views-row-3 .pinterest.node-product-display.view-mode-pinterest,
+.views-row-6 .pinterest.node-product-display.view-mode-pinterest,
+.views-row-9 .pinterest.node-product-display.view-mode-pinterest,
+.views-row-12 .pinterest.node-product-display.view-mode-pinterest{
+    margin-right:0;    
+}
+.views-row-4 .pinterest.node-product-display.view-mode-pinterest,
+.views-row-7 .pinterest.node-product-display.view-mode-pinterest,
+.views-row-10 .pinterest.node-product-display.view-mode-pinterest,
+.views-row-13 .pinterest.node-product-display.view-mode-pinterest{
+    clear:both;
+}
+/* END pinterest block */
+
 .ofertas_block .block_right_wing {
   background-position: -218px -83px;
   display: block;
@@ -916,34 +957,7 @@ body.page-ofertas #region-sidebar-first .default_block,
   display: none;
 }
 
-.field-name-field-subtitulo-destacado,
-.pinterest.node-product-display .field-name-field-subtitulo-destacado {
-  background-color: #004677;
-  margin-bottom: 8px;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding: 4px 20px;
-  position: relative;
-  color: #ffffff;
-  font-weight:bold;
-  font-family: exo;
-}
-.views-row-even .pinterest.node-product-display.view-mode-pinterest_wide {
-  float: right;
-  margin-right: 0;
-}
-.views-row-3 .pinterest.node-product-display.view-mode-pinterest,
-.views-row-6 .pinterest.node-product-display.view-mode-pinterest,
-.views-row-9 .pinterest.node-product-display.view-mode-pinterest,
-.views-row-12 .pinterest.node-product-display.view-mode-pinterest{
-    margin-right:0;    
-}
-.views-row-4 .pinterest.node-product-display.view-mode-pinterest,
-.views-row-7 .pinterest.node-product-display.view-mode-pinterest,
-.views-row-10 .pinterest.node-product-display.view-mode-pinterest,
-.views-row-13 .pinterest.node-product-display.view-mode-pinterest{
-    clear:both;
-}
+
 #page #block-views-contenido-destacado-home-block{
     background-color: transparent;
     border: 0 none;
