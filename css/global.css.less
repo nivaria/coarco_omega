@@ -1581,7 +1581,7 @@ th {
   color: #000;*/
   
   color:#444;
-  padding:2px 8px;
+  padding:6px 8px;
   font-family:arial;
 }
 #page th{
@@ -1778,6 +1778,7 @@ tr.odd {
     text-indent: 48px;
     white-space: nowrap;
     font-size:12px;
+    clear:both;
 }
 .stock_value {
     display: none;
@@ -1950,9 +1951,29 @@ body.node-type-product-display .ds-product-center {
   margin-bottom: 1em;
   padding-bottom: 1em;
 }
+body.node-type-product-display .ds-product-bottom .field-commerce-price{
+  font-size:36px;
+}
 body.node-type-product-display .ds-product-bottom {
   float: right;
   width: 604px;
+  position:relative;
+}
+body.node-type-product-display .ds-product-bottom label{
+  color:#000;
+  font-family:exo;
+  font-size:12px;
+}
+body.node-type-product-display .ds-product-bottom .field-name-commerce-stock {
+    float: left;
+    left: 86px;
+    position: absolute;
+    top: 90px;
+    color:#000;
+    font-family:exo;
+}
+body.node-type-product-display .ds-product-bottom #edit-quantity{
+  width:76px;
 }
 body.node-type-product-display .ds-product-links {
   float: right;
