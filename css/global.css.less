@@ -1854,9 +1854,21 @@ tr.odd {
   border-right: 0 none;
   height: 32px;
   line-height: 32px;
+  
+  
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    height: auto;
+    line-height: 16px;
+    margin-bottom: 1em;
 }
 #page .views-exposed-widgets .views-exposed-widget {
   padding: 0 0 0 1em;
+  
+    margin-right: 1em;
+    margin-top: 1em;
+    padding: 0;
 }
 #edit-search-api-views-fulltext-wrapper {
   width: 372px;
@@ -1865,18 +1877,25 @@ tr.odd {
   display: none;
 }
 #page .views-exposed-widgets .form-text {
-  border: 0 none;
-  height: 30px;
+  /*border: 0 none;
+  height: 30px;*/
 }
 #page .views-exposed-widgets label {
-  display: inline;
+  display: block;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: bold;
+}
+#page .views-widget-filter-date_filter > label{
+  display:none;
+}
+#edit-date-filter-min-wrapper,
+#edit-date-filter-max-wrapper{
+  float:left;
 }
 .view-product-search .view-footer{
     font-size: 12px;
 }
-#page .views-exposed-widgets select {
+/*#page .views-exposed-widgets select {
   margin-left: 1em;
 }
 #page .views-exposed-widgets .views-submit-button {
@@ -1896,6 +1915,9 @@ tr.odd {
   border: 0 none;
   background-color: transparent;
   margin: 0;
+}*/
+#page .views-exposed-widgets .form-submit {
+  margin-top:16px;
 }
 body.node-type-product-display .node-product-display.view-mode-full {
   background-color: transparent;
@@ -2148,6 +2170,7 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
   border-radius: 0 8px 8px 8px;
   padding: 16px;
   clear: both;
+  overflow:hidden;
 }
 .quicktabs-wrapper ul,
 .quicktabs-wrapper ul li {
@@ -2307,7 +2330,12 @@ table.expand-query-table{
   top: 1em;
 }
 /* END coarco-expand-search-form */
-
+body.page-node-expand-pedidos .form-submit{
+  display:none;
+}
+body.page-node-expand-pedidos #coarco-expand-search-form .form-submit{
+  display:inline;
+}
 body.page-node-expand-pedidos fieldset{
   border-radius:8px;
   background-color:#fff;
