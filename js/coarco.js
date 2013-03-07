@@ -28,4 +28,48 @@ jQuery(document).ready(function($){
            jQuery("#om-menu-mi-cuenta .om-link").removeClass("over"); 
         }
     );
+    if( jQuery("body").hasClass("front") ){
+        var a1=jQuery("<div style='width:318px;float:left;' ></div>");
+        var a2=jQuery("<div style='width:318px;float:left;' ></div>");
+        
+        var count=1;
+        
+        jQuery(".views-row","#block-views-productos-home-block").each( function(){
+            if( count<5 ){
+                a1.append( jQuery(this) );
+            } else {
+                a2.append( jQuery(this) );
+            }
+            count++;
+        });
+        
+        jQuery(".view-productos-home .view-content","#block-views-productos-home-block").append(
+            a1,
+            a2
+        );
+    }
+    if( jQuery("body").hasClass("page-productos") ){
+        var a1=jQuery("<div style='width:238px;float:left;' ></div>");
+        var a2=jQuery("<div style='width:238px;float:left;' ></div>");
+        var a3=jQuery("<div style='width:238px;float:left;' ></div>");
+        
+        var count=1;
+        
+        jQuery(".views-row","#block-system-main").each( function(){
+            if( count<4 ){
+                a1.append( jQuery(this) );
+            } else if( count>3 && count<7 ){
+                a2.append( jQuery(this) );
+            } else {
+                a3.append( jQuery(this) );
+            }
+            count++;
+        });
+        
+        jQuery(".view-product-search .view-content","#block-system-main").append(
+            a1,
+            a2,
+            a3
+        );
+    }
 });
