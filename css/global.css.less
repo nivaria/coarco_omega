@@ -1131,7 +1131,7 @@ body.page-ofertas #region-sidebar-first .default_block,
   width:72px;
 }
 .pinterest.node-product-display .field-name-field-product.field-type-commerce-product-reference{
-  float: left;
+  float: right;
   margin-right: 0.5em;
 }
 .pinterest.node-product-display .field-name-field-product.field-type-commerce-product-reference .field-item.odd{
@@ -1139,7 +1139,7 @@ body.page-ofertas #region-sidebar-first .default_block,
 }
 .pinterest.node-product-display  ul.links{
   display:block;
-  float:left;
+  float:right;
   margin:0;
 }
 .pinterest.node-product-display  ul.links li{
@@ -1637,7 +1637,7 @@ tr.odd {
     text-decoration: line-through;
     display:block;
 }
-#page table .views-field-field-product #edit-line-item-fields{
+#page table .views-field-field-product .form-wrapper{
     float: left;
     margin-right: 1em;
 }
@@ -1698,7 +1698,7 @@ tr.odd {
 }
 /* END enlaces destacados */
 
-#page table .views-field-field-product #edit-submit,
+#page table .views-field-field-product .form-submit,
 .add-to-cart-expandable {
   display: block;
   background-image: url(../images/sprites.png);
@@ -1711,7 +1711,7 @@ tr.odd {
   float: right;
   text-indent: -9999px;
 }
-#page table .views-field-field-product #edit-submit{
+#page table .views-field-field-product .form-submit{
    background-color: transparent;
     clear: none;
     float: left;
@@ -1871,7 +1871,7 @@ tr.odd {
     padding: 0;
 }
 #edit-search-api-views-fulltext-wrapper {
-  width: 372px;
+  margin-top:30px !important;
 }
 #page #edit-search-api-views-fulltext-wrapper label {
   display: none;
@@ -1891,6 +1891,13 @@ tr.odd {
 #edit-date-filter-min-wrapper,
 #edit-date-filter-max-wrapper{
   float:left;
+}
+#edit-items-per-page{
+  width:154px;
+}
+#edit-circle{
+  margin-bottom: 0;
+    margin-top: 1em;
 }
 .view-product-search .view-footer{
     font-size: 12px;
@@ -2361,6 +2368,9 @@ body.node-type-empresa .node-empresa .ds-bottom{
     padding: 20px;
     overflow:hidden;
 }
+body.node-type-empresa .node-empresa .ds-top{
+  margin-top:1em;
+}
 body.node-type-empresa .field-name-field-horario-empresa .field-label,
 body.node-type-empresa .field-name-field-ol-locator-address .field-label,
 body.node-type-empresa .group-empresa-contacto .fieldset-legend{
@@ -2379,6 +2389,30 @@ body.node-type-empresa .field-name-field-horario-empresa{
   margin:0;
 }
 /* END detalle de ferreteria */
+
+/* BEGIN block-search-api-sorts-search-sorts */
+#block-search-api-sorts-search-sorts h2.block-title{
+    color: #444444;
+    display: inline;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: normal;
+    padding-right: 2em;
+}
+#block-search-api-sorts-search-sorts ul,
+#block-search-api-sorts-search-sorts li,
+#block-search-api-sorts-search-sorts div{
+  display:inline;
+  margin:0;
+  padding:0;
+}
+#block-search-api-sorts-search-sorts .search-api-sorts li {
+  padding-left:1em;
+}
+#block-search-api-sorts-search-sorts .search-api-sorts li a{
+  color: #0071B2;
+}
+/* END block-search-api-sorts-search-sorts */
 
 /* bloque equipo */
 .block-equipo-block{
@@ -2413,8 +2447,8 @@ body.node-type-empresa .field-name-field-horario-empresa{
     position:relative;
 }
 #block-views-buscador-de-ferreterias-block-3 .views-exposed-form .views-widget-per-page{
-    left: 16px;
+    left: 0;
     padding: 0;
     position: absolute;
-    top: 40px;
+    top: 46px;
 }
