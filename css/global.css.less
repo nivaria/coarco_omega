@@ -1576,12 +1576,25 @@ th {
 }
 td,
 th {
-  padding: 6px 12px;
+  /*padding: 6px 12px;
   font-family: exo;
-  color: #000;
+  color: #000;*/
+  
+  color:#444;
+  padding:2px 8px;
+  font-family:arial;
+}
+th{
+  background-color:#0071B2;
+  color:#fff;
+}
+th a{
+  color:#fff;
 }
 td a {
-  color: #000;
+  /*color: #000;*/
+  
+  color: #0071B2
 }
 td.views-field.views-field-title {
   font-weight: bold;
@@ -1598,14 +1611,18 @@ tr.odd {
   background-color: transparent;
 }
 #page tr.odd td {
-  background-color: #f5f5f3;
+  /*background-color: #f5f5f3;*/
   border: 0 none;
   border-right: 1px solid #fff;
+  
+  background-color: #fff;
 }
 #page tr.even td {
-  background-color: #bfd9e8;
+  /*background-color: #bfd9e8;*/
   border: 0 none;
   border-right: 1px solid #fff;
+  
+  background-color: #E5F1F7; 
 }
 #page tr td:first-child {
   border-radius: 6px 0 0 6px;
@@ -2199,11 +2216,83 @@ body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value-wrapp
     clear:both;
 }
 
+/* BEGIN system tabs*/
 ul.primary li {
     display: block;
     float: left;
     margin-bottom: 4px;
 }
+ul.primary li a{
+  background-color: #FFFFFF;
+  border: 1px solid #4DD2FF;
+  border-radius: 8px;
+  color: #0071B2;
+  font-size: 13px;
+  font-weight: bold;
+  display:block;
+  padding: 5px 12px;
+}
+ul.primary li a.active{
+  background-color: #4DD2FF;
+  border-radius: 8px 8px 8px 8px;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  border:0 none;
+}
+/* END system tabs*/
+
+/* BEGIN coarco-expand-search-form */
+#coarco-expand-search-form .date-wrapper,
+#coarco-expand-search-form .form-item {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+#coarco-expand-search-form .date-wrapper .form-item{
+  margin:0;
+}
+#coarco-expand-search-form label{
+  font-size:12px;
+}
+#coarco-expand-search-form .date-wrapper{
+  border:0 none !important;
+}
+#coarco-expand-search-form .container-inline-date {
+    clear: none;
+    float: left;
+}
+#coarco-expand-search-form .container-inline-date .date-padding {
+    float: none;
+    padding: 0;
+}
+#coarco-expand-search-form .form-submit{
+    margin-top: 32px;
+}
+#edit-cdped{
+  width:124px;
+}
+table.expand-query-table{
+  clear: both;
+  position: relative;
+  top: 1em;
+}
+/* END coarco-expand-search-form */
+
+body.page-node-expand-pedidos fieldset{
+  border-radius:8px;
+  background-color:#fff;
+  background-image:none;
+  border:1px solid #4DD2FF;
+  padding:20px;
+}
+body.page-node-expand-pedidos fieldset legend{
+  padding:0 4px;
+  font-size:16px;
+  color:#0071B2;
+}
+
 
 /* BEGIN detalle de ferreteria */
 body.node-type-empresa .node-empresa .ds-top,
