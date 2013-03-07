@@ -28,6 +28,11 @@ jQuery(document).ready(function($){
            jQuery("#om-menu-mi-cuenta .om-link").removeClass("over"); 
         }
     );
+    /*jQuery(".pinterest.node-product-display").each(function(){
+        jQuery(this).find("h2").addClass("title-with-stock").before(
+            jQuery(this).find(".field-name-commerce-stock")
+        );
+    });*/
     if( jQuery("body").hasClass("front") ){
         var a1=jQuery("<div style='width:318px;float:left;' ></div>");
         var a2=jQuery("<div style='width:318px;float:left;' ></div>");
