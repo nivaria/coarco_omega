@@ -36,3 +36,12 @@ body.prices-visible div.field-name-commerce-price {
 #messages{
   display:none;
 }
+
+.view-commerce-coarco-mi-pedido .views-field-field-imagen-destacada {
+  float: left;
+  padding-right: 8px;
+}
+
+.view-commerce-coarco-mi-pedido .view-footer div.field-name-commerce-order-total {
+  font-size: 16px;
+}
