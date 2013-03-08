@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
     });*/
     if( jQuery("body").hasClass("front") ){
         var a1=jQuery("<div style='width:318px;float:left;' ></div>");
-        var a2=jQuery("<div style='width:318px;float:left;' ></div>");
+        var a2=jQuery("<div style='width:318px;float:right;' ></div>");
         
         var count=1;
         
@@ -54,9 +54,9 @@ jQuery(document).ready(function($){
         );
     }
     if( jQuery("body").hasClass("page-productos") ){
-        var a1=jQuery("<div style='width:238px;float:left;' ></div>");
-        var a2=jQuery("<div style='width:238px;float:left;' ></div>");
-        var a3=jQuery("<div style='width:238px;float:left;' ></div>");
+        var a1=jQuery("<div style='width:232px;float:left;' ></div>");
+        var a2=jQuery("<div style='width:232px;float:left;' ></div>");
+        var a3=jQuery("<div style='width:232px;float:right;' ></div>");
         
         var count=1;
         

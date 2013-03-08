@@ -598,14 +598,16 @@ body.front #section-content{
   margin: 70px 0 0 14px;
   margin: 70px 0 0 0;
 }
-.telefono{
+#section-footer .contact,
+#section-footer .telefono{
     display: block;
     padding-left: 32px;
     position: relative;
 }
-.telefono:before{
+#section-footer .contact:before,
+#section-footer .telefono:before{
   background-image: url(../images/sprites.png);
-  background-position: -327px -135px;
+  background-position: -327px -102px;
   background-repeat: no-repeat;
   overflow: hidden;
   width: 28px;
@@ -615,6 +617,9 @@ body.front #section-content{
     left: 0;
     position: absolute;
     top: 2px;
+}
+#section-footer .contact:before{
+  background-position: -327px -135px;
 }
 #block-coarco-catalog-product-family-search {
   background-image: url(../images/sprites.png);
@@ -985,6 +990,7 @@ body.page-ofertas #region-sidebar-first .default_block,
 .pinterest.node-product-display {
   margin-right: 16px;
   padding: 20px;
+  padding: 20px 20px 32px;
   width: 180px;
   float: left;
 }
@@ -1098,9 +1104,16 @@ body.page-ofertas #region-sidebar-first .default_block,
     float:none;
     clear:both;
 }
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-submit:hover{
+  background-position: -20px -599px;
+  color:#fff;
+}
 #page .pinterest.view-mode-pinterest_wide.node-product-display form.commerce-expandable-add-to-cart .form-submit{
   width:260px;
   background-position: -226px -550px;
+}
+#page .pinterest.view-mode-pinterest_wide.node-product-display form.commerce-expandable-add-to-cart .form-submit:hover{
+  background-position: -226px -598px;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper{
   float:left;
@@ -1209,7 +1222,6 @@ body.page-ofertas #region-sidebar-first .default_block,
   border: 1px solid #DBE1E6;
   border-radius: 12px 12px 12px 12px;
   margin-bottom: 16px;
-  padding: 20px;
   color: #fff;
 }
 .pinterest.red .block_left_wing,
@@ -1637,10 +1649,12 @@ tr.odd {
     text-decoration: line-through;
     display:block;
 }
+#page table .views-field-add-to-cart-form .form-wrapper,
 #page table .views-field-field-product .form-wrapper{
     float: left;
     margin-right: 1em;
 }
+#page table .views-field-add-to-cart-form .form-item-quantity,
 #page table .views-field-field-product .form-item-quantity{
     float: left;
     margin-right: 1em;
@@ -1698,6 +1712,7 @@ tr.odd {
 }
 /* END enlaces destacados */
 
+#page table .views-field-add-to-cart-form .form-submit,
 #page table .views-field-field-product .form-submit,
 .add-to-cart-expandable {
   display: block;
@@ -1711,6 +1726,7 @@ tr.odd {
   float: right;
   text-indent: -9999px;
 }
+#page table .views-field-add-to-cart-form .form-submit,
 #page table .views-field-field-product .form-submit{
    background-color: transparent;
     clear: none;
@@ -1744,6 +1760,10 @@ tr.odd {
   float: left;
   text-transform: uppercase;
   padding-top: 1em;
+}
+.pinterest.node-product-display .field-name-field-enlace{
+  position:absolute;
+  bottom:12px;
 }
 .field-name-field-enlace a {
   background-image: url(../images/sprites.png);
@@ -1846,6 +1866,26 @@ tr.odd {
 }
 /* END filtro lateral */
 
+/* BEGIN bloque tfno contacto */
+#block-nodeblock-25204 h2.block-title{
+  font-size:18px;
+  position:relative;
+  padding-left:40px;
+  line-height:38px;
+}
+#block-nodeblock-25204 h2.block-title:before{
+  background-position:-552px -552px;
+  background-image:url('../images/sprites.png');
+  content:' ';
+  position:absolute;
+  left:0;
+  top:0;
+  width:40px;
+  height:40px;
+  background-repeat:no-repeat;
+}
+/* END bloque tfno contacto */
+
 #page .views-exposed-widgets {
   border: 1px solid #C1C1C2;
   border-radius: 6px 6px 6px 6px;
@@ -1895,6 +1935,13 @@ tr.odd {
 #edit-items-per-page{
   width:154px;
 }
+#edit-fechav-value-datepicker-popup-0{
+  width:200px;
+}
+#edit-cdper-value,
+#edit-cdper-value2{
+  margin-top:18px;
+}
 #edit-circle{
   margin-bottom: 0;
     margin-top: 1em;
@@ -1932,6 +1979,8 @@ body.node-type-product-display .node-product-display.view-mode-full {
   float: none;
   padding: 0;
   width: 100%;
+  
+  margin-top:1em;
 }
 body.node-type-product-display .ds-product-left {
   float: left;
@@ -1997,7 +2046,7 @@ body.node-type-product-display .ds-product-bottom .field-name-commerce-stock {
     float: left;
     left: 86px;
     position: absolute;
-    top: 90px;
+    top: 80px;
     color:#000;
     font-family:exo;
 }
@@ -2030,7 +2079,7 @@ body.node-type-product-display .ds-product-links ul li {
 body.node-type-product-display .ds-product-foot {
   clear: both;
 }
-body.node-type-product-display .field-name-title h2 {
+body.node-type-product-display .ds-product-top .field-name-title h2 {
     height: 12px;
     margin-bottom: 0;
     text-indent: -9999px;    
@@ -2111,21 +2160,35 @@ body.node-type-product-display .ds-product-links .flag-action {
 }
 body.node-type-product-display #page .commerce-add-to-cart .form-submit {
   background-image: url(../images/sprites.png);
-  background-repeat: no-repeat;
-  width: 201px;
-  height: 74px;
-  background-position: -536px -45px;
-  background-color: transparent;
-  border: 0 none;
-  border-radius: 0 0 0 0;
-  float: right;
-  padding: 0;
-  text-align: left;
-  text-indent: 12px;
+  background-color:transparent;
+  background-position: -731px -56px;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 0;
+    color: #444444;
+    display: block;
+    float: right;
+    height: 65px;
+    margin-top: 8px;
+    padding: 0;
+    text-align: left;
+    text-indent: 12px;
+    width: 185px;
+}
+body.node-type-product-display #page .commerce-add-to-cart .form-submit:hover{
+  background-position: -535px -56px;
+  color:#fff;
 }
 body.node-type-product-display .ds-product-bottom .field-name-field-product {
   clear: both;
-  margin-top: 4em;
+  margin-top: 48px;
+}
+body.node-type-product-display .ds-product-bottom .field-name-field-pvp-recomendado{
+    clear: none;
+    margin-right: 1em;
+    margin-top: 0;
+}
+body.node-type-product-display .ds-product-bottom .field-name-commerce-price{
+  clear:none;
 }
 body.node-type-product-display .field-name-field-product #edit-line-item-fields {
   float: left;
@@ -2399,7 +2462,7 @@ body.node-type-empresa .field-name-field-horario-empresa{
     font-weight: normal;
     padding-right: 2em;
 }
-#block-search-api-sorts-search-sorts ul,
+#block-search-api-sorts-search-sorts ul.search-api-sorts,
 #block-search-api-sorts-search-sorts li,
 #block-search-api-sorts-search-sorts div{
   display:inline;
