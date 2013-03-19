@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+    jQuery(".pinterest .add-to-cart-expandable").addClass("hidden");
     jQuery(".ofertas_block h2,.pinterest .field-name-field-subtitulo-destacado").each( function(){
         jQuery(this).append("<div class='block_left_wing'></div>");
         jQuery(this).append("<div class='block_right_wing'></div>");
