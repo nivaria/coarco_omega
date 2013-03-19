@@ -1470,9 +1470,12 @@ body.node-type-equipo .field-type-file img,
   width: 30px;
   position: absolute;
   margin: 0;
-  
+
   font-weight:bold;
   font-family:@title_default_font_fam;
+}
+#block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li a{
+    color:#fff;
 }
 #block-coarco-empresas-mapa-ferreterias-isla .mapa-ferreterias-isla li#el-hierro {
   width: 28px;
@@ -2125,9 +2128,8 @@ body.node-type-product-display .ds-product-bottom {
   position:relative;
 }
 body.node-type-product-display .ds-product-bottom label{
-  color:#000;
-  font-family:@title_default_font_fam;
-  font-size:12px;
+  color:#7f7f7f;
+  font-size:14px;
 }
 body.node-type-product-display .ds-product-bottom .field-name-commerce-stock {
     float: left;
@@ -2276,29 +2278,36 @@ body.node-type-product-display .ds-product-bottom .field-name-commerce-price{
 }
 body.node-type-product-display .field-name-field-product #edit-line-item-fields {
   float: left;
-  margin-left: 210px;
-  margin-right: 1em;
-  margin-top: 26px;
+  margin-left:0px;
+  margin-right: 0;
+  margin-top: 4px;
+  background-color:#fff;
+  padding:6px;
+}
+body.node-type-product-display .field-name-field-product #edit-line-item-fields select{
+  width:136px;
 }
 body.node-type-product-display .field-name-field-product #edit-line-item-fields .form-item {
   margin: 0;
 }
 body.node-type-product-display .field-name-field-product .form-type-textfield {
   float: left;
-  margin: 26px 0 0;
+  margin: 4px 0 0;
+  background-color:#fff;
+  padding:6px;
 }
 #node_product_display_full_group_descargar {
-  background-color: #EDEDEC;
-  border-radius: 8px 8px 8px 8px;
-  margin-top: 1em;
-  padding: 15px;
-  width: 272px;
+    background-color: #FFFFFF;
+    border: 1px solid #B6C4CF;
+    margin-top: 1em;
+    padding: 12px 20px;
+    width: 272px;
 }
 #node_product_display_full_group_descargar legend {
   color: #000000;
   display: block;
   float: left;
-  font-family: @title_default_font_fam;
+  font-size:14px;
   font-weight: bold;
 }
 #node_product_display_full_group_descargar .fieldset-wrapper {
@@ -2309,14 +2318,30 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
   display: none;
 }
 #node_product_display_full_group_descargar a {
-  color: #000;
-  font-family: @title_default_font_fam;
+  color: @default_blue;
+    display: block;
+    padding-left: 20px;
+    position: relative;
+}
+#node_product_display_full_group_descargar a:before{
+    background-image:url('../images/sprites.png');
+    background-position: -560px -604px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 11px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 10px;
 }
 #node_product_display_full_group_descargar .field-name-field-todo {
   padding-top: 0.5em;
 }
 #node_product_display_full_group_descargar .field-name-field-todo .field-item {
-  padding-right: 1em;
+     display: block;
+    padding-bottom: 1em;
+    padding-right: 0;
 }
 .quicktabs-tabpage {
   background-color: #FFFFFF;
