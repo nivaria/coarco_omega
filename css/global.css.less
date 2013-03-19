@@ -1808,7 +1808,7 @@ tr.odd {
   display: block;
   background-image: url(../images/sprites.png);
   background-repeat: no-repeat;
-  width: 100px;
+  width: auto;
   height: 36px;
   background-position: -58px -45px;  
 }
@@ -1871,6 +1871,21 @@ tr.odd {
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
 }
+
+body.node-type-product-display .ds-product-center .field-name-commerce-stock .stock_text{    
+    background-image:none;
+    padding-left:24px;
+    margin:0;
+    text-align:left;
+    text-indent:0;
+    float:none;
+    color:#7f7f7f;
+}
+
+body.node-type-product-display .ds-product-center .field-name-commerce-stock .stock_text:before{
+  left:0;
+}
+
 .stock_value {
     display: none;
 }
@@ -1908,7 +1923,7 @@ tr.odd {
   margin-top:12px;
   height: auto;
   margin-top:6px;
-  width: 100px
+  width: auto;
 }
 
 /* BEGIN filtro lateral */
@@ -2098,12 +2113,8 @@ body.node-type-product-display .ds-product-top {
 body.node-type-product-display .ds-product-center {
   float: right;
   width: 604px;
-  border-top: 2px solid #B6C4CE;
-  margin-top: 1em;
-  padding-top: 1em;
-  border-bottom: 2px solid #B6C4CE;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 body.node-type-product-display .ds-product-bottom .field-commerce-price{
   font-size:36px;
@@ -2135,9 +2146,7 @@ body.node-type-product-display .ds-product-links {
   border-top: 2px solid #B6C4CE;
   margin-top: 1em;
   padding-top: 1em;
-  border-bottom: 2px solid #B6C4CE;
-  margin-bottom: 1em;
-  padding-bottom: 1em;
+  margin-bottom:4em;
 }
 body.node-type-product-display .ds-product-links ul {
   margin: 0;
@@ -2150,7 +2159,7 @@ body.node-type-product-display .ds-product-links ul li {
   overflow: hidden;
   display: block;
   float: left;
-  width: 30%;
+  width: auto;
 }
 body.node-type-product-display .ds-product-foot {
   clear: both;
@@ -2198,13 +2207,13 @@ body.node-type-product-display .field-name-field-alias .field-item:first-child:b
 }
 body.node-type-product-display a.print-page {
   background-image: url(../images/sprites.png);
-  background-repeat: no-repeat;
-  width: 59px;
-  height: 72px;
-  display: block;
-  background-position: -561px -374px;
-  margin: 0 auto 0 2em;
-  float:left;
+    background-position: -513px -602px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 33px;
+    margin: 0;
+    width: 27px;
 }
 body.node-type-product-display a.print-page img {
   display: none;
@@ -2237,23 +2246,23 @@ body.node-type-product-display .ds-product-links .flag-action {
 body.node-type-product-display #page .commerce-add-to-cart .form-submit {
   background-image: url(../images/sprites.png);
   background-color:transparent;
-  background-position: -731px -56px;
+    background-position: -695px -477px;
     background-repeat: no-repeat;
     border-radius: 0 0 0 0;
-    color: #444444;
+    color: #FFFFFF;
     display: block;
     float: right;
-    height: 65px;
+    height: 40px;
     margin-top: 8px;
     padding: 0;
-    text-align: left;
-    text-indent: 12px;
-    width: 185px;
+    text-align: center;
+    text-indent: -24px;
+    width: 210px;
 }
-body.node-type-product-display #page .commerce-add-to-cart .form-submit:hover{
+/*body.node-type-product-display #page .commerce-add-to-cart .form-submit:hover{
   background-position: -535px -56px;
   color:#fff;
-}
+}*/
 body.node-type-product-display .ds-product-bottom .field-name-field-product {
   clear: both;
   margin-top: 48px;
@@ -2261,7 +2270,6 @@ body.node-type-product-display .ds-product-bottom .field-name-field-product {
 body.node-type-product-display .ds-product-bottom .field-name-field-pvp-recomendado{
     clear: none;
     margin-right: 1em;
-    margin-top: 0;
 }
 body.node-type-product-display .ds-product-bottom .field-name-commerce-price{
   clear:none;
