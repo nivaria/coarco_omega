@@ -2594,35 +2594,117 @@ body.page-node-expand-pedidos fieldset legend{
 
 
 /* BEGIN detalle de ferreteria */
-body.node-type-empresa .node-empresa .ds-top,
-body.node-type-empresa .node-empresa .ds-center,
-body.node-type-empresa .node-empresa .ds-bottom{
+body.node-type-empresa #block-system-main{
     background-color: #FFFFFF;
     border: 1px solid #DBE1E6;
     border-radius: 12px 12px 12px 12px;
     margin-bottom: 16px;
     padding: 20px;
     overflow:hidden;
-}
-body.node-type-empresa .node-empresa .ds-top{
-  margin-top:1em;
+    margin-top:1em;
 }
 body.node-type-empresa .field-name-field-horario-empresa .field-label,
 body.node-type-empresa .field-name-field-ol-locator-address .field-label,
 body.node-type-empresa .group-empresa-contacto .fieldset-legend{
   color:#004677;
   font-family:@title_default_font_fam;
-  font-size:14px;
+  font-size:16px;
   font-weight:bold;
 }
+body.node-type-empresa #block-system-main .node-empresa .ds-left{
+  float:left;
+}
+body.node-type-empresa #block-system-main .node-empresa .ds-center{
+  float:right;
+  width:46%;
+}
 body.node-type-empresa .field-name-campo-mapa{
-  margin-top:1em;
+  
 }
 body.node-type-empresa .group-empresa-contacto,
 body.node-type-empresa .field-name-field-horario-empresa{
-  float:left;
-  width:50%;
-  margin:0;
+  
+}
+#node_empresa_full_group_empresa_contacto{
+  padding-left:42px;
+  position:relative;
+}
+#node_empresa_full_group_empresa_contacto:before{
+  content:' ';
+  position:absolute;
+  display:block;
+  background-image:url('../images/sprites.png');
+  width:42px;
+  height:32px;
+  background-repeat:no-repeat;
+  background-position:-554px -555px;
+  left:0;
+  top:0;
+}
+body.node-type-empresa .field-name-field-horario-empresa{
+  padding-left:42px;
+  position:relative;
+}
+body.node-type-empresa .field-name-field-horario-empresa:before{
+  content:' ';
+  position:absolute;
+  display:block;
+  background-image:url('../images/sprites.png');
+  width:42px;
+  height:32px;
+  background-repeat:no-repeat;
+  background-position:-600px -555px;
+  left:0;
+  top:0;
+}
+body.node-type-empresa .ds-left .field-name-body{
+  padding-left:42px;
+  position:relative;
+  margin-top:1em;
+}
+body.node-type-empresa .ds-left .field-name-body:before{
+  content:' ';
+  position:absolute;
+  display:block;
+  background-image:url('../images/sprites.png');
+  width:24px;
+  height:32px;
+  background-repeat:no-repeat;
+  background-position:-519px -555px;
+  left:0;
+  top:0;
+}
+body.node-type-empresa .ds-left .field-name-field-ol-locator-address{
+  padding-left:42px;
+  position:relative;
+}
+body.node-type-empresa .ds-left .field-name-campo-mapa-como-llegar{
+  padding-left:42px;
+  position:relative;
+}
+body.node-type-empresa .ds-left .field-name-campo-mapa-como-llegar a{
+    background-color: #0071B2;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    display: block;
+    font-family: exo;
+    font-size: 16px;
+    padding: 2px 0;
+    text-align: center;
+    margin-top:0.5em;
+}
+body.node-type-empresa #block-views-sucursales-block{
+  margin-top:2em;
+}
+body.node-type-empresa #block-views-sucursales-block h2.block-title{
+    color: #7F7F7F;
+    font-family: exo;
+    font-size: 18px;
+    font-weight: normal;
+}
+body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-comercial-empresa a{
+   font-family:exo;
+   font-size:18px;
 }
 /* END detalle de ferreteria */
 
