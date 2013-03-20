@@ -39,7 +39,7 @@ function coarco_omega_preprocess_html(&$vars) {
     $vars['theme_hook_suggestions'][] = 'html__overlay';
   }
   
-  drupal_add_css("http://fonts.googleapis.com/css?family=Exo", "external");
+  drupal_add_css("http://fonts.googleapis.com/css?family=Exo:400,800,600", "external");
 }
 
 function coarco_omega_breadcrumb($variables) {
