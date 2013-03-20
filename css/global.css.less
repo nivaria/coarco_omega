@@ -599,12 +599,14 @@ body.front #section-content{
   margin: 70px 0 0 14px;
   margin: 70px 0 0 0;
 }
+#section-footer .direccion,
 #section-footer .contact,
 #section-footer .telefono{
     display: block;
     padding-left: 32px;
     position: relative;
 }
+#section-footer .direccion:before,
 #section-footer .contact:before,
 #section-footer .telefono:before{
   background-image: url(../images/sprites.png);
@@ -618,6 +620,11 @@ body.front #section-content{
     left: 0;
     position: absolute;
     top: 2px;
+}
+#section-footer .direccion:before{
+    background-position: -600px -597px;
+    height: 36px;
+    left: 5px;
 }
 #section-footer .contact:before{
   background-position: -327px -135px;
