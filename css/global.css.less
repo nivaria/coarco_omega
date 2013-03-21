@@ -1785,12 +1785,14 @@ tr.odd {
   font-size:14px;
   font-weight:400;
 }
+#commerce-checkout-form-review #edit-continue,
 #commerce-checkout-form-checkout #edit-continue{
       float: right;
     font-size: 14px;
     font-weight: normal;
     padding: 4px 14px;
 }
+#commerce-checkout-form-review #edit-back,
 #commerce-checkout-form-checkout #edit-cancel{
     background-color: #0071B2;
     float: left;
@@ -1826,6 +1828,41 @@ tr.odd {
 .commerce-order-handler-area-order-total .commerce-price-formatted-components {
     margin: 0;
     width: 100%;
+}
+#edit-commerce-payment,
+.checkout-help {
+  background-color: #FFFFFF;
+  border: 1px solid #DBE1E6;
+  border-radius: 12px 12px 12px 12px;
+  margin-bottom: 16px;
+  padding: 20px;
+  
+  border-bottom: 0 none;
+  border-radius: 12px 12px 0 0;
+  margin: 0;
+  padding-bottom: 0;
+}
+#edit-buttons,
+#edit-checkout-review {
+  background-color: #FFFFFF;
+  border: 1px solid #DBE1E6;
+  border-radius: 12px 12px 12px 12px;
+  margin-bottom: 16px;
+  padding: 20px;
+  
+  border-radius: 0 0 12px 12px;
+  border-top: 0 none;
+  padding-top: 12px;
+}
+#edit-commerce-payment legend{
+  float:left;
+}
+#edit-commerce-payment .fieldset-wrapper{
+  clear:both;
+}
+#page #edit-checkout-review .view-footer .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount td{
+  background-color: #E5ECF1;
+  color:#000;
 }
 /* END CART */
 
@@ -2011,7 +2048,8 @@ tr.odd {
   font-size:14px;
 }
 #page #edit-checkout-review tr.even td{
-    background-color: #F5F5F3;
+    /*background-color: #F5F5F3;*/
+    background-color:transparent;
 }
 .field-name-commerce-order-total .field-type-commerce-price,
 .view-commerce-cart-summary .field-type-commerce-price{
