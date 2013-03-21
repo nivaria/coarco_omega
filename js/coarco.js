@@ -57,8 +57,14 @@ jQuery(document).ready(function($){
     jQuery(".ui-slider-handle").each( function(index,element){
         if(index==0){
             jQuery(this).addClass("handle-min");
+            jQuery( this ).append(
+                jQuery("#edit-range-from")
+            );
         } else {
             jQuery(this).addClass("handle-max");
+            jQuery( this ).append(
+                jQuery("#edit-range-to")
+            );
         }
     });
     if( jQuery("body").hasClass("page-productos") ){
