@@ -54,6 +54,13 @@ jQuery(document).ready(function($){
             a2
         );
     }
+    jQuery(".ui-slider-handle").each( function(index,element){
+        if(index==0){
+            jQuery(this).addClass("handle-min");
+        } else {
+            jQuery(this).addClass("handle-max");
+        }
+    });
     if( jQuery("body").hasClass("page-productos") ){
         var a1=jQuery("<div style='width:232px;float:left;' ></div>");
         var a2=jQuery("<div style='width:232px;float:left;' ></div>");
