@@ -56,6 +56,36 @@ function coarco_omega_breadcrumb($variables) {
 
 function coarco_omega_preprocess_mimemail_message(&$variables) {
   global $base_url;
+  global $language;
   $variables['logo'] = $base_url . theme_get_setting('logo');
   $variables['front_page'] = url();
+  $languages = language_list();
+  $language = !empty($variables['recipient']->language) ? $languages[$variables['recipient']->language] : $language;
+  $variables['private_area_link'] = l(t('Manage my account', array(), array('language' => $language->language)),
+    'user',
+    array(
+      'language' => $language,
+      'attributes' => array(
+          'style' => 'color:#FFF;text-decoration:none',
+      )
+    )
+  );  
+  $variables['privacy_policy_link'] = l(t('Privacy policy', array(), array('language' => $language->language)),
+    'node/48',
+    array(
+      'language' => $language,
+      'attributes' => array(
+          'style' => 'color:#FFF;text-decoration:none',
+      )
+    )
+  );  
+  $variables['contact_link'] = l(t('Contact', array(), array('language' => $language->language)),
+    'node/47',
+    array(
+      'language' => $language,
+      'attributes' => array(
+          'style' => 'color:#FFF;text-decoration:none',
+      )
+    )
+  );  
 }
