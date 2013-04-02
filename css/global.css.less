@@ -14,8 +14,7 @@
 
 /* END less vars */
 
-#block-coarco-price-coarco-price-toogle-price-block,
-#messages {
+#block-coarco-price-coarco-price-toogle-price-block{
   display: none;
 }
 #admin-menu {
@@ -1834,13 +1833,13 @@ tr.odd {
   background-color:transparent;
   border:0 none;
   
-  font-size:18px;
+  font-size:16px;
   color:#000;
   font-weight:normal;
   text-align:right;
 }
 #page .commerce-price-formatted-components tr td.component-title{
-  width:90%;
+  width:80%;
 }
 #page .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount td,
 #page .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount{
@@ -2125,6 +2124,22 @@ body.node-type-product-display .ds-product-center .field-name-commerce-stock .st
 }
 
 body.node-type-product-display .ds-product-center .field-name-commerce-stock .stock_text:before{
+  left:0;
+}
+
+.view-commerce-cart-form .field-name-commerce-stock .stock_text,
+.view-commerce-cart-summary .field-name-commerce-stock .stock_text{    
+    background-image:none;
+    padding-left:24px;
+    margin:0;
+    text-align:left;
+    text-indent:0;
+    float:none;
+    color:#7f7f7f;
+}
+
+.view-commerce-cart-form .field-name-commerce-stock .stock_text:before,
+.view-commerce-cart-summary .field-name-commerce-stock .stock_text:before{
   left:0;
 }
 
@@ -2813,7 +2828,8 @@ body.page-node-expand-pedidos fieldset legend{
 
 
 /* BEGIN detalle de ferreteria */
-body.node-type-empresa #block-system-main{
+body.node-type-empresa #block-system-main,
+body.node-type-empresa #block-coarco-empresas-ferreteria-street-view{
     background-color: #FFFFFF;
     border: 1px solid #DBE1E6;
     border-radius: 12px 12px 12px 12px;
@@ -2860,6 +2876,13 @@ body.node-type-empresa .field-name-field-horario-empresa{
   left:0;
   top:0;
 }
+body.node-type-empresa .ds-center .field-name-field-telefono-empresa div.field-label{
+  font-size:16px;
+}
+body.node-type-empresa .ds-center .field-name-field-telefono-empresa div.field-item{
+  display:block;
+  font-size:18px;
+}
 body.node-type-empresa .field-name-field-horario-empresa{
   padding-left:42px;
   position:relative;
@@ -2876,12 +2899,12 @@ body.node-type-empresa .field-name-field-horario-empresa:before{
   left:0;
   top:0;
 }
-body.node-type-empresa .ds-left .field-name-body{
+body.node-type-empresa .ds-left .field-name-field-ol-locator-address{
   padding-left:42px;
   position:relative;
   margin-top:1em;
 }
-body.node-type-empresa .ds-left .field-name-body:before{
+body.node-type-empresa .ds-left .field-name-field-ol-locator-address:before{
   content:' ';
   position:absolute;
   display:block;
@@ -2893,15 +2916,11 @@ body.node-type-empresa .ds-left .field-name-body:before{
   left:0;
   top:0;
 }
-body.node-type-empresa .ds-left .field-name-field-ol-locator-address{
+body.node-type-empresa .ds-center .field-name-campo-mapa-como-llegar{
   padding-left:42px;
   position:relative;
 }
-body.node-type-empresa .ds-left .field-name-campo-mapa-como-llegar{
-  padding-left:42px;
-  position:relative;
-}
-body.node-type-empresa .ds-left .field-name-campo-mapa-como-llegar a{
+body.node-type-empresa .ds-center .field-name-campo-mapa-como-llegar a{
     background-color: #0071B2;
     border-radius: 6px 6px 6px 6px;
     color: #FFFFFF;
