@@ -2992,7 +2992,7 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
     font-family: arial;
     font-size: 16px;
     font-weight: normal;
-    padding-right: 2em;
+    padding-right: 0;
 }
 #block-search-api-sorts-search-sorts ul.search-api-sorts,
 #block-search-api-sorts-search-sorts li,
@@ -3067,3 +3067,44 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
 .view-product-express-search tr span.title {
   display:block;
 }
+
+/* BEGIN page pedido express */
+body.page-pedido-express #region-content .region-inner{
+  position:relative;
+}
+body.page-pedido-express #block-search-api-sorts-search-sorts{
+    position: absolute;
+    right: 0;
+    top: 91px;
+}
+body.page-pedido-express #block-search-api-sorts-search-sorts .sort-item {
+    background-image: none;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    font-family: Armata;
+    text-shadow: none;
+    position:relative;
+}
+body.page-pedido-express #block-search-api-sorts-search-sorts .sort-item:after{
+  position:absolute;
+  content:' ';
+  display:block;
+  right:4px;
+  top:4px;
+  background-repeat:no-repeat;
+  background-image:url('../images/sprites.png');
+  background-position:-10px -586px;
+  width:12px;
+  height:6px;
+}
+body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item {
+    background-color: #EE3B22;
+}
+body.page-pedido-express #block-search-api-sorts-search-sorts li.last .sort-item {
+    background-color: #0073AF;
+}
+body.page-pedido-express #edit-items-per-page {
+    width: 56px;
+}
+/* END page pedido express */
