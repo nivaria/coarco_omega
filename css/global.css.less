@@ -2746,31 +2746,34 @@ body.page-ferreterias-asociadas #edit-field-nombre-comercial-empresa-value-wrapp
 /* BEGIN system tabs*/
 ul.primary {
     margin: 0;
-    padding: 0 0 1em;
+    padding: 0;
+    margin-left:1em;
+    border:0 none;
 }
 ul.primary li {
     display: block;
     float: left;
-    margin-bottom: 4px;
+    margin-bottom: 0;
     margin-right: 0;
 }
 ul.primary li a{
   background-color: #FFFFFF;
   border: 1px solid #4DD2FF;
-  border-radius: 8px;
-  color: #0071B2;
+  border-bottom:0 none;
+  border-radius: 8px 8px 0 0;
+  color: #666;
   font-size: 13px;
   font-weight: normal;
   display:block;
   padding: 5px 12px;
 }
+ul.primary li:hover a,
 ul.primary li a.active{
-  background-color: #4DD2FF;
-  border-radius: 8px 8px 8px 8px;
+  background-color: #4DD2FF;  
   color: #FFFFFF;
   font-size: 13px;
-  font-weight: bold;
-  border:0 none;
+  border: 1px solid #4DD2FF;
+  border-bottom:0 none;
 }
 /* END system tabs*/
 
@@ -2843,7 +2846,7 @@ body.node-type-empresa #block-coarco-empresas-ferreteria-street-view{
     margin-bottom: 16px;
     padding: 20px;
     overflow:hidden;
-    margin-top:1em;
+    margin-top:0;
 }
 body.node-type-empresa .field-name-field-horario-empresa .field-label,
 body.node-type-empresa .field-name-field-ol-locator-address .field-label,
