@@ -1857,6 +1857,16 @@ tr.odd {
   
   color:#fff;
 }
+body.page-user-orders #page .commerce-price-formatted-components tr.component-type-taxvariable-vat td,
+body.page-user-orders #page .commerce-price-formatted-components tr.component-type-base-price td,
+body.page-user-orders #page .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount td{
+  font-size:18px;
+  font-family: @title_default_font_fam;
+}
+body.page-user-orders #page .commerce-price-formatted-components tr.component-type-taxvariable-vat td,
+body.page-user-orders #page .commerce-price-formatted-components tr.component-type-base-price td{
+  color:#000;
+}
 #page .commerce-price-formatted-components tr.component-type-base-price td{
   padding-bottom:0;
 }
@@ -3010,6 +3020,10 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
 }
 #block-search-api-sorts-search-sorts .search-api-sorts li a{
   color: #0071B2;
+  color:#fff;
+}
+#block-search-api-sorts-search-sorts .search-api-sorts li a img{
+  vertical-align:baseline;
 }
 /* END block-search-api-sorts-search-sorts */
 
@@ -3073,6 +3087,9 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
 }
 
 /* BEGIN page pedido express */
+body.page-pedido-express .view-product-express-search #edit-search-api-views-fulltext{
+  width:208px;
+}
 body.page-pedido-express #region-content .region-inner{
   position:relative;
 }
@@ -3082,36 +3099,47 @@ body.page-pedido-express #block-search-api-sorts-search-sorts{
     top: 91px;
     z-index:10;
 }
-body.page-pedido-express #block-search-api-sorts-search-sorts li.last span,
-body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item {
+body.page-pedido-express #block-search-api-sorts-search-sorts li {
     background-image: none;
     border: 0 none;
     border-radius: 4px;
     color: #FFFFFF;
     font-family: Armata;
     text-shadow: none;
+    margin-left:0.5em;
     position:relative;
     padding:3px 10px 4px;
+}
+/*body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item {
+  padding-right:20px;
 }
 body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item:after{
   position:absolute;
   content:' ';
   display:block;
   right:4px;
-  top:4px;
+  top:10px;
   background-repeat:no-repeat;
   background-image:url('../images/sprites.png');
   background-position:-10px -586px;
   width:12px;
   height:6px;
 }
-body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item {
+body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item.sort-asc:after{
+  background-position:-24px -586px;
+}*/
+body.page-pedido-express #block-search-api-sorts-search-sorts li.first {
     background-color: #EE3B22;
 }
-body.page-pedido-express #block-search-api-sorts-search-sorts li.last span {
+body.page-pedido-express #block-search-api-sorts-search-sorts li.last {
     background-color: #0073AF;
 }
 body.page-pedido-express #edit-items-per-page {
     width: 56px;
 }
 /* END page pedido express */
+
+
+body.page-user-orders .field-name-commerce-order-total .commerce-price-formatted-components{
+  width:100%;
+}
