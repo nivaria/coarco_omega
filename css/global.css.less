@@ -426,16 +426,25 @@ body.front #section-content{
 }
 #block-coarco-generic-my-bookmarks-menu-block {
   background-image: url(../images/sprites.png);
-  background-position: 30px -244px;
+  background-position: 37px -244px;
   background-repeat: no-repeat;
   height: 52px;
   line-height: 58px;
   margin-top: -8px;
 }
-#block-coarco-generic-my-orders-menu-block {
+#block-coarco-generic-my-orders-menu-block{
+  position:relative;
+}
+#block-coarco-generic-my-orders-menu-block:before {
   background-image: url(../images/sprites.png);
   background-position: -30px -319px;
   background-repeat: no-repeat;
+  content:' ';
+  position:absolute;
+  left:0;
+  top:0;
+  width:28px;
+  height:40px;
 }
 #block-coarco-generic-my-bookmarks-menu-block .my-bookmarks-menu,
 #block-coarco-generic-my-orders-menu-block .my-order-menu {
@@ -1605,6 +1614,7 @@ body.node-type-equipo .field-type-file img,
   height: 28px;
   line-height: 28px;
   width: 100%;
+  position:relative;
 }
 #coarco-empresas-ferreterias-isla-form .form-item {
   display: inline;
@@ -1631,7 +1641,10 @@ body.node-type-equipo .field-type-file img,
   background-position:-496px -48px; 
 }
 #coarco-empresas-ferreterias-isla-form .form-submit{
-  padding-right:16px;
+    padding-right: 16px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
 }
 
 /* END bloque Encuentra tu ferreteria */
@@ -2410,25 +2423,32 @@ body.node-type-product-display .field-slideshow {
 body.node-type-product-display .field-slideshow .field-slideshow-slide{
   width: 302px !important;
 }
-body.node-type-product-display .field-slideshow-controls a.prev,
-body.node-type-product-display .field-slideshow-controls a.next {
+body.not-front .field-slideshow-controls a.prev,
+body.not-front .field-slideshow-controls a.next {
   background-image: url(../images/sprites.png);
    background-repeat: no-repeat;
     cursor: pointer;
     height: 34px;
     position: absolute;
     text-indent: -9999px;
-    top: 94px;
+    top: 204px;
     width: 35px;
     z-index: 10;
 }
-body.node-type-product-display .field-slideshow-controls a.prev {
+body.not-front .field-slideshow-controls a.prev {
    background-position: -884px -8px;
     left: -4px;
 }
-body.node-type-product-display .field-slideshow-controls a.next {
+body.not-front .field-slideshow-controls a.next {
    background-position: -981px -35px;
-    right: 24px;
+    right: -10px;
+}
+body.node-type-product-display .field-slideshow-controls a.next {
+  right:24px;
+}
+body.node-type-product-display .field-slideshow-controls a.prev,
+body.node-type-product-display .field-slideshow-controls a.next {
+    top: 94px;
 }
 body.node-type-product-display .ds-product-top {
   float: right;
