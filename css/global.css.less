@@ -3280,56 +3280,108 @@ body.page-user-orders .field-name-commerce-order-total .commerce-price-formatted
 
 /* BEGIN dashboard */
 body.page-coarco-commerce-reports{
-  ul.primary li{
-    a{
-      color:#0071b2;
-      font-size:13px;
-      text-transform:uppercase;
-      border-radius:0;
-      -webkit-borde-radius:0;
-      border:0 none;
-      background-color: transparent;
-      font-weight:bold;
-      border-bottom: 4px solid transparent;
+  #page {
+    ul.primary{
+      margin:0;
+      li{
+        a{
+          color:#0071b2;
+          font-size:13px;
+          text-transform:uppercase;
+          border-radius:0;
+          -webkit-borde-radius:0;
+          border:0 none;
+          background-color: transparent;
+          font-weight:bold;
+          border-bottom: 4px solid transparent;
+          padding:8px 12px;
+        }
+        a:hover{
+          border-bottom:4px solid #45d1ff;
+        }
+        a.active{
+          color:#fff;
+          border-radius:6px;
+          -webkit-border-radius:6px;
+          background-color:#45d1ff;
+          border:0 none;
+          position:relative;
+        }
+        a.active:before{
+          content:' ';
+          position:absolute;
+          display:block;
+          width:14px;
+          height:7px;
+          background-position:-10px -609px;
+          background-image:url('../images/sprites.png');
+          background-repeat:no-repeat;
+          bottom: -7px;
+          left:48%;
+        }
+      }
     }
-    a:hover{
-      border-bottom:4px solid #45d1ff;
-    }
-    a.active{
-      color:#fff;
-      border-radius:6px;
-      -webkit-border-radius:6px;
-      background-color:#45d1ff;
-      border:0 none;
-    }
-  }
-  div.commerce-reports-dashboard-block .header{
-    background-color:@link_default_color;
-    border:0 none;
-    padding:8px 16px;
+    div.commerce-reports-dashboard-block{
+      margin:1em 0;
+      background-color:#fff;
+      border:1px solid #dbe1d6;
+      box-shadow:0 10px 6px -6px #DDE2E5;
+      
+      table{
+        th {
+          background-color:#b6bbc0;
+          text-align:center;
+          font-size:14px;
+          font-weight:bold;
+          border:1px solid #dbe1e6;
+        }
+        tr{
+          text-align:center;
+          font-size:13px;
+          color:#444;
+          
+          td{
+            border:0 none;
+          }
+        }
+        tr.odd{
+          background-color:#fff;
+        }
+        tr.even{
+          background-color:#ececec;
+        }
+      }
     
-    h1{
-      color:#fff;
-      font-size:16px;
-      letter-spacing:0;
-      font-weight:bold;
-    }
-    span{
-      display:none;
-    }
-    .operations li a{
-      background-image:none;
-      background-color:#0f84c1;
-      border-radius:4px;
-      font-size:13px;
-      text-shadow:none;
-      border:1px solid transparent;
-      padding:3px 28px;
-      margin-left:10px;
-    }
-    .operations li a.activated{
-      border:1px solid #aecbdc;
-      background-color:#3ebff0;
+      .header{
+        background-color:@link_default_color;
+        border:0 none;
+        padding:8px 16px;
+        
+        h1{
+          color:#fff;
+          font-size:16px;
+          letter-spacing:0;
+          font-weight:bold;
+        }
+        span{
+          display:none;
+        }
+        .operations li a{
+          background-image:none;
+          background-color:#0f84c1;
+          border-radius:4px;
+          font-size:13px;
+          text-shadow:none;
+          border:1px solid transparent;
+          padding:3px 28px;
+          margin-left:10px;
+        }
+        .operations li a:hover,
+        .operations li a.activated{
+          border:1px solid #aecbdc;
+          background-color:#3ebff0;
+        }
+      }
     }
   }
 }
