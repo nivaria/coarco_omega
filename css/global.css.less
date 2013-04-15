@@ -191,19 +191,28 @@ textarea:active {
     text-transform:cacapitalize;
 }
 .pager li.pager-previous a{
-    background-image:url('../images/sprites.png');
+    /*background-image:url('../images/sprites.png');
     background-position:-897px -13px;
     background-repeat:no-repeat;
-    margin-left: 1em;
+    margin-left: 1em;*/
     padding-left: 14px;
 }
 .pager li.pager-next a{
-    background-image:url('../images/sprites.png');
+    /*background-image:url('../images/sprites.png');
     background-position:-936px -40px;
     background-repeat:no-repeat;
-    margin-right: 1em;
+    margin-right: 1em;*/
     padding-right: 14px;
 }
+.pager li.pager-previous a:before{
+    content: "<";
+    margin-right: 4px;
+}
+.pager li.pager-next a:after{
+    content: ">";
+    margin-left: 4px;
+}
+
 /* END pager */
 
 #page {
