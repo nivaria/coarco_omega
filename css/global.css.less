@@ -2290,6 +2290,36 @@ body.node-type-product-display .no-stock .ds-product-center .field-name-commerce
   margin-top:6px;
   width: auto;
 }
+/* BEGIN bloque info stock cesta */
+#block-coarco-cart-coarco-cart-stock-info {
+  margin-top: 65px;
+  border: 2px solid #EE3B22 !important;
+}
+#block-coarco-cart-coarco-cart-stock-info .block-title {
+  margin-bottom: 10px;
+}
+.order-stock-info li:before{
+  display:none;
+  content:' ';
+  width:18px;
+  height:18px;
+  background-image:url('../images/sprites.png');
+  background-repeat:no-repeat;
+  float: left;
+  margin-left: -20px;
+}
+.order-stock-info li.low-stock:before{
+  background-position:-740px -138px;
+  display:block;
+}
+.order-stock-info li.no-stock:before{
+  background-position: -784px -138px;
+  display:block;
+}
+.order-stock-info .product-title{
+  font-weight: bold;
+}
+/* END bloque info stock cesta */
 
 /* BEGIN filtro lateral */
 .block.block-facetapi h2.block-title {
