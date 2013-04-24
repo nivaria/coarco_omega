@@ -2772,12 +2772,13 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
   padding: 0;
 }
 #page .quicktabs-tabs li {
-  background-color: #FFFFFF;
+  background-color: transparent;
   display: block;
   float: left;
 }
 #page .quicktabs-tabs li a {
   color: #002a4e;
+  background-color: #FFFFFF;
   font-family: @title_default_font_fam;
   text-transform: uppercase;
   padding: 6px 32px 6px 16px;
@@ -2787,14 +2788,15 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
   display: block;
   border-top: 1px solid #E1E5E9;
 }
-#page .quicktabs-tabs li:first-child a {
-  border-radius: 8px 0 0 0;
-  border-left: 1px solid #E1E5E9;
-}
 #page .quicktabs-tabs li:last-child a {
   background-image: none;
   padding-left: 0;
   padding-right: 0;
+}
+#page .quicktabs-tabs li:first-child a {
+  border-radius: 8px 0 0 0;
+  border-left: 1px solid #E1E5E9;
+  padding: 6px 32px 6px 16px;
 }
 .quicktabs-wrapper ul.quicktabs-tabs {
   background-image: url(../images/tab_title_bg_end.png);
