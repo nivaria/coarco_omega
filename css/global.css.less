@@ -1682,7 +1682,8 @@ body.node-type-equipo .field-type-file img,
     border: 1px solid #809CB0;
 }
 #page .form-item-range-reset{
-  padding-top:26px;
+  padding-top:36px;
+  padding-bottom:12px;
 }
 #page .ui-slider-range{
     background-color: #FFFFFF;
@@ -1731,7 +1732,7 @@ body.node-type-equipo .field-type-file img,
 }
 #page #edit-range-from:after,
 #page #edit-range-to:after{
-  content:' €';
+  content:' &euro;';
 }
 .search-api-ranges-reset-widget .form-item-range-reset input.form-checkbox {
     display:none;
@@ -2035,6 +2036,7 @@ body.page-checkout-review #edit-checkout-review {
 .add-to-cart-expandable.hidden {
   width: 101px;
   height: 37px;
+  letter-spacing:-1px;
   background-position: -955px -269px;
   font-family:@title_default_font_fam;
   font-size: 12px;
@@ -2742,50 +2744,52 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
     border: 1px solid #B6C4CF;
     margin-top: 1em;
     padding: 12px 20px;
-    width: 272px;
-}
-#node_product_display_full_group_descargar legend {
-  color: #000000;
-  display: block;
-  float: left;
-  font-size:14px;
-  font-weight: bold;
-}
-#node_product_display_full_group_descargar .fieldset-wrapper {
-  clear: both;
-  padding-top: 0.5em;
-}
-#node_product_display_full_group_descargar .field-label {
-  display: none;
-}
-#node_product_display_full_group_descargar img{
-  display:none;
-}
-#node_product_display_full_group_descargar a {
-  color: @default_blue;
-    display: block;
-    padding-left: 20px;
-    position: relative;
-}
-#node_product_display_full_group_descargar a:before{
-    background-image:url('../images/sprites.png');
-    background-position: -560px -604px;
-    background-repeat: no-repeat;
-    content: " ";
-    display: block;
-    height: 11px;
-    left: 0;
-    position: absolute;
-    top: 6px;
-    width: 10px;
-}
-#node_product_display_full_group_descargar .field-name-field-todo {
-  padding-top: 0.5em;
-}
-#node_product_display_full_group_descargar .field-name-field-todo .field-item {
-     display: block;
-    padding-bottom: 1em;
-    padding-right: 0;
+    width: 260px;
+    
+    legend {
+      color: #000000;
+      display: block;
+      float: left;
+      font-size:14px;
+      font-weight: bold;
+    }
+    .fieldset-wrapper {
+      clear: both;
+      padding-top: 0.5em;
+    }
+    .field-label {
+      display: none;
+    }
+    img{
+      display:none;
+    }
+    a {
+      color: @default_blue;
+      display: block;
+      padding-left: 20px;
+      position: relative;
+    }
+    a:before{
+      background-image:url('../images/sprites.png');
+      background-position: -560px -604px;
+      background-repeat: no-repeat;
+      content: " ";
+      display: block;
+      height: 11px;
+      left: 0;
+      position: absolute;
+      top: 6px;
+      width: 10px;
+    }
+    .field-name-field-todo {
+      padding-top: 0.5em;
+      
+      .field-item {
+        display: block;
+        padding-bottom: 1em;
+        padding-right: 0;
+      }
+    }
 }
 .quicktabs-tabpage {
   background-color: #FFFFFF;
