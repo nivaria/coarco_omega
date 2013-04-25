@@ -1713,6 +1713,10 @@ body.node-type-equipo .field-type-file img,
 #page .handle-max{
   background-position:-818px -593px;
 }
+#page .handle-min:after,
+#page .handle-max:after{
+  content:' €';
+}
 #page .range-values-wrapper label,
 #page .text-range{
   display:none;
@@ -1729,10 +1733,6 @@ body.node-type-equipo .field-type-file img,
     margin-top: 38px;
     padding: 0;
     width: auto;
-}
-#page #edit-range-from:after,
-#page #edit-range-to:after{
-  content:' &euro;';
 }
 .search-api-ranges-reset-widget .form-item-range-reset input.form-checkbox {
     display:none;
