@@ -3011,21 +3011,32 @@ table.expand-query-table a.xml-icon:before{
   background-position: -669px -138px;
   position: absolute;
 }
-.expand-query-form input.excel-icon{
-  float: right;
-  clear: both;
-  content: ' ';
-  background-image: url(/sites/all/themes/coarco_omega/images/sprites.png) !important;
-  background-repeat: no-repeat;
-  background-position: -691px -138px;
-  background-color: transparent !important;
-  border: 0 none !important;
-  color: #FFFFFF;
+.expand-query-form div.export{
+  text-indent: 20px;
   display: block;
-  height: 22px;
-  margin: 0;
-  padding: 0;
+  clear: both;
+  float: right;
+  width: 130px;
+}
+.expand-query-form div.export input{
+  background: none !important;
+  border: none !important;
+  color: rgb(51, 51, 51) !important;
+}
+.expand-query-form div.export:before{
+  display: block;
+  content: ' ';
   width: 22px;
+  height: 22px;
+  background-image: url(/sites/all/themes/coarco_omega/images/sprites.png);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.expand-query-form div.excel-icon:before{
+  background-position: -691px -138px;
+}
+.expand-query-form div.xml-icon:before{
+  background-position: -666px -138px;
 }
 /* END coarco-expand-search-form */
 body.page-node-expand-pedidos .form-submit{
