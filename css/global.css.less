@@ -2232,6 +2232,10 @@ body.node-type-product-display .ds-product-center .field-name-commerce-stock .st
   height:36px;
 }
 
+.view-commerce-cart-form .views-field-line-item-title a,
+.view-commerce-cart-summary .views-field-line-item-title .title{
+  display:block;
+}
 .view-commerce-cart-form .field-name-commerce-stock .stock_text,
 .view-commerce-cart-summary .field-name-commerce-stock .stock_text{    
     background-image:none;
@@ -2247,7 +2251,21 @@ body.node-type-product-display .ds-product-center .field-name-commerce-stock .st
 .view-commerce-cart-summary .field-name-commerce-stock .stock_text:before{
   left:0;
 }
-
+.view-commerce-cart-form .stock,
+.view-commerce-cart-summary .stock{
+  float: left;
+}
+.view-commerce-cart-form .confirm-type,
+.view-commerce-cart-summary .confirm-type{
+  color: #7f7f7f;
+  font-size: 12px;
+  font-style: italic;
+}
+.view-commerce-cart-form .confirm-type:before,
+.view-commerce-cart-summary .confirm-type:before{
+  content:'/';
+  padding-right: 10px;
+}
 .stock_value {
     display: none;
 }
@@ -2281,8 +2299,6 @@ body.node-type-product-display .no-stock .ds-product-center .field-name-commerce
     display:block;
 }
 
-
-
 .field-name-commerce-price {
   clear: both;
   float: right;
@@ -2305,13 +2321,23 @@ body.node-type-product-display .no-stock .ds-product-center .field-name-commerce
 }
 /* BEGIN bloque info stock cesta */
 #block-coarco-cart-coarco-cart-stock-info {
-  margin-top: 65px;
+  margin-bottom: 20px;
   border: 2px solid #EE3B22 !important;
+  padding: 20px 30px;
+  background-color: #FFF;
 }
 #block-coarco-cart-coarco-cart-stock-info .block-title {
   margin-bottom: 10px;
 }
-.order-stock-info li:before{
+.order-stock-info .line-item {
+  padding-left: 20px;
+  margin-bottom: 1em;
+}
+.order-stock-info .product-title{
+  font-weight: bold;
+  color: #000;
+}
+.order-stock-info .product-title:before{
   display:none;
   content:' ';
   width:18px;
@@ -2321,16 +2347,22 @@ body.node-type-product-display .no-stock .ds-product-center .field-name-commerce
   float: left;
   margin-left: -20px;
 }
-.order-stock-info li.low-stock:before{
+.order-stock-info .low-stock .product-title:before{
   background-position:-740px -138px;
   display:block;
 }
-.order-stock-info li.no-stock:before{
+.order-stock-info .no-stock .product-title:before{
   background-position: -784px -138px;
   display:block;
 }
-.order-stock-info .product-title{
-  font-weight: bold;
+.order-stock-info .form-item{
+  margin: 0;
+}
+.order-stock-info .form-item .form-radios{
+  margin-left: 1em;
+}
+.order-stock-info .form-submit{
+  margin-top: 1em;
 }
 /* END bloque info stock cesta */
 
