@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
         var count=1;
         
         jQuery(".views-row","#block-views-productos-home-block").each( function(){
-            if( count<5 ){
+            if(count%2 == 0){
                 a1.append( jQuery(this) );
             } else {
                 a2.append( jQuery(this) );
@@ -72,12 +72,12 @@ jQuery(document).ready(function($){
         var a2=jQuery("<div style='width:232px;float:left;' ></div>");
         var a3=jQuery("<div style='width:232px;float:right;' ></div>");
         
-        var count=1;
+        var count=0;
         
         jQuery(".views-row","#block-system-main").each( function(){
-            if( count<4 ){
+            if( count%3==0){
                 a1.append( jQuery(this) );
-            } else if( count>3 && count<7 ){
+            } else if(count%3==1){
                 a2.append( jQuery(this) );
             } else {
                 a3.append( jQuery(this) );
