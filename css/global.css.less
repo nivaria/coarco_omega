@@ -2596,6 +2596,8 @@ body.node-type-product-display .field-slideshow-controls a.next {
 body.node-type-product-display .ds-product-top {
   float: right;
   width: 604px;
+  border-bottom: 2px solid #B6C4CE;
+  padding-bottom: 1em;
 }
 body.node-type-product-display .ds-product-center {
   float: right;
@@ -2658,10 +2660,8 @@ body.node-type-product-display .ds-product-top .field-name-title h2 {
   font-weight:normal;
 }
 body.node-type-product-display .field-name-title{
-  clear: left;
-  float: left;
+  clear: both;
   margin: 0;
-  width: 368px;
 }
 body.node-type-product-display .ds-product-top .field-name-body{
   clear:both;
@@ -2705,15 +2705,18 @@ body.node-type-product-display .field-name-field-family .field-item:before {
 body.node-type-product-display .field-name-field-family .field-item:first-child:before {
   content: none;
 }
-body.node-type-product-display .field-name-field-datos-tecnicos th{
-  display:none
+body.node-type-product-display .field-collection-container {
+  border: none;
+  margin: 0;
 }
-body.node-type-product-display .field-name-field-datos-tecnicos td{
-  color: #666;
-}
-body.node-type-product-display .field-name-field-datos-tecnicos td.views-field-field-dato{
+body.node-type-product-display .field-name-field-datos-tecnicos .field-name-field-dato{
+  float: left;
   color: #7f7f7f;
-  font-weight: bold;
+  font-weight:bold;
+  padding-right:2px;
+}
+body.node-type-product-display .field-name-field-datos-tecnicos .field-name-field-dato .field-item:after{
+  content:":";
 }
 body.node-type-product-display .field .field-label {
   color: #7f7f7f;
