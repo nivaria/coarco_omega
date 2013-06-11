@@ -1933,16 +1933,6 @@ tr.odd {
   
   color:#fff;
 }
-body.page-user-orders #page .commerce-price-formatted-components tr.component-type-taxvariable-vat td,
-body.page-user-orders #page .commerce-price-formatted-components tr.component-type-base-price td,
-body.page-user-orders #page .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount td{
-  font-size:18px;
-  font-family: @title_default_font_fam;
-}
-body.page-user-orders #page .commerce-price-formatted-components tr.component-type-taxvariable-vat td,
-body.page-user-orders #page .commerce-price-formatted-components tr.component-type-base-price td{
-  color:#000;
-}
 #page .commerce-price-formatted-components tr.component-type-base-price td{
   padding-bottom:0;
 }
@@ -3484,11 +3474,6 @@ body.page-pedido-express #edit-items-per-page {
 }
 /* END page pedido express */
 
-
-body.page-user-orders .field-name-commerce-order-total .commerce-price-formatted-components{
-  width:100%;
-}
-
 /* BEGIN dashboard */
 body.page-coarco-commerce-reports{
   #page {
@@ -3705,3 +3690,33 @@ body.page-node-informes{
   }
 }
 /* END dashboard */
+
+/* BEGIN order detail */
+body.page-user-orders {
+  div.entity-commerce-order {
+    .field {
+      margin:20px 0px;
+    }
+    .field-collection-container {
+      margin:20px 0px;
+      .content > .field {
+        padding-left: 20px;
+      }
+      .field-items .field {
+        margin:8px 0px;
+      }
+    }
+    .field-name-commerce-order-total .commerce-price-formatted-components {
+      width:100%;
+      tr, tr td {
+        font-size:14px !important;
+        font-family: arial;
+      }
+      tr.component-type-taxvariable-vat td,
+      tr.component-type-base-price td {
+        color:#000;
+      }
+    }
+  }
+}
+/* END order detail */
