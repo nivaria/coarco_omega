@@ -1915,18 +1915,21 @@ tr.odd {
 }
 #commerce-checkout-form-review #edit-continue,
 #commerce-checkout-form-checkout #edit-continue{
-      float: right;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 4px 14px;
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 4px 14px;
 }
 #commerce-checkout-form-review #edit-back,
 #commerce-checkout-form-checkout #edit-cancel{
-    background-color: #0071B2;
-    float: left;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 4px 32px;
+  background-color: #0071B2;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 4px 32px;
+}
+#commerce-checkout-form-checkout .description {
+  margin-left: 0;
 }
 #page .commerce-price-formatted-components tr td,
 #page .commerce-price-formatted-components tr{
@@ -3574,7 +3577,14 @@ body.page-coarco-commerce-reports{
           font-weight:bold;
         }
         span{
-          display:none;
+          color: #fff;
+          vertical-align: middle;
+          a {
+            color: #3ebff0;
+          }
+          a:hover {
+            color: #fff;
+          }
         }
         .operations li a{
           background-image:none;
@@ -3676,13 +3686,20 @@ body.page-node-informes{
         padding:8px 16px;
         
         h1{
-          color:#fff;
+          color: #fff;
           font-size:16px;
           letter-spacing:0;
           font-weight:bold;
         }
         span{
-          display:none;
+          color: #fff;
+          vertical-align: middle;
+          a {
+            color: #3ebff0;
+          }
+          a:hover {
+            color: #fff;
+          }
         }
         .operations li a{
           background-image:none;
