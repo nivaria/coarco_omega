@@ -19,8 +19,8 @@
 
 /* Toogle price block */
 #block-coarco-price-coarco-price-toogle-price-block {
-  top: -3px;
-  position: relative;
+  margin-top: -3px;
+  float: left;
 }
 
 .prices-hidden {
@@ -1935,7 +1935,6 @@ tr.odd {
 #page .commerce-price-formatted-components tr{
   background-color:transparent;
   border:0 none;
-  
   font-size:16px;
   color:#000;
   font-weight:normal;
@@ -1947,7 +1946,6 @@ tr.odd {
 #page .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount td,
 #page .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount{
   background-color:#004579;
-  
   color:#fff;
 }
 #page .commerce-price-formatted-components tr.component-type-base-price td{
@@ -2262,6 +2260,12 @@ body.node-type-product-display .ds-product-center .field-name-field-expand-felle
   padding-top:1em;
 }
 
+.view-commerce-cart-form tr.low-stock,
+.view-commerce-cart-summary tr.low-stock,
+.view-commerce-cart-form tr.no-stock,
+.view-commerce-cart-summary tr.no-stock {
+  border: 2px solid #EE3B22 !important;
+}
 .view-commerce-cart-form .views-field-line-item-title a,
 .view-commerce-cart-summary .views-field-line-item-title .title{
   display:block;
