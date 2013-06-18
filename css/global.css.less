@@ -30,6 +30,14 @@
   .field-type-commerce-price .field-items {
     display: none;
   }
+  .views-field-commerce-price,
+  .views-field-commerce-total,
+  .views-field-commerce-order-total {
+    display: none;
+  }
+  .price {
+    display:none;
+  }
 }
 /* END Toogle price block */
 
@@ -3326,20 +3334,23 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
     top: 0;
 }
 
-/* BEGIN page pedido express */
-.view-product-express-search tr span.image,
-.view-product-express-search tr span.code {
+/* BEGIN views product-compact-list */
+.product-compact-list tr span.image,
+.product-compact-list tr span.code {
   float:left;
   padding-right:8px;
   padding-bottom:2em;
 }
-.view-product-express-search tr span.title {
+.product-compact-list tr a span.code {
+  color: #444;
+}
+.product-compact-list tr span.title {
   display:block;
 }
-.view-product-express-search tr.not-offer span.field-pvp-recomendado {
+.product-compact-list tr.not-offer span.field-pvp-recomendado {
   display: none !important;
 }
-body.page-pedido-express .view-product-express-search #edit-search-api-views-fulltext{
+.product-compact-list #edit-search-api-views-fulltext{
   width:208px;
 }
 body.page-pedido-express #region-content .region-inner{
@@ -3362,24 +3373,6 @@ body.page-pedido-express #block-search-api-sorts-search-sorts li {
   position:relative;
   padding:3px 10px 4px;
 }
-/*body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item {
-  padding-right:20px;
-}
-body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item:after{
-  position:absolute;
-  content:' ';
-  display:block;
-  right:4px;
-  top:10px;
-  background-repeat:no-repeat;
-  background-image:url('../images/sprites.png');
-  background-position:-10px -586px;
-  width:12px;
-  height:6px;
-}
-body.page-pedido-express #block-search-api-sorts-search-sorts li.first .sort-item.sort-asc:after{
-  background-position:-24px -586px;
-}*/
 body.page-pedido-express #block-search-api-sorts-search-sorts li.first {
   background-color: #EE3B22;
 }
