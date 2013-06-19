@@ -13,9 +13,14 @@
 @default_red: #f03f13;
 
 /* END less vars */
-#messages {
-  /*display:none;*/
+
+/* Generic price and numbers */
+.number,
+.price,
+.amount {
+  text-align: right;
 }
+/* END Generic price and numbers */
 
 /* Toogle price block */
 #block-coarco-price-coarco-price-toogle-price-block {
@@ -2271,6 +2276,9 @@ body.node-type-product-display .ds-product-center .field-name-field-expand-felle
 .view-commerce-cart-summary .views-field-line-item-title .title{
   display:block;
   font-size: 13px;
+}
+.view-commerce-cart-form .form-text {
+  text-align: right;
 }
 .view-commerce-cart-form tr.low-stock,
 .view-commerce-cart-summary tr.low-stock,
