@@ -2794,7 +2794,7 @@ body.node-type-product-display .field .field-label {
   color: #7f7f7f;
 }
 
-a.print-page {
+#page a.print-page {
   background-image: url(../images/sprites.png);
     background-position: -513px -602px;
     background-repeat: no-repeat;
@@ -2916,31 +2916,33 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
     .fieldset-wrapper {
       clear: both;
       padding-top: 0.5em;
+      
+      a {
+        color: @default_blue;
+        display: block;
+        padding-left: 20px;
+        position: relative;
+      }
+      a:before{
+        background-image:url('../images/sprites.png');
+        background-position: -560px -604px;
+        background-repeat: no-repeat;
+        content: " ";
+        display: block;
+        height: 11px;
+        left: 0;
+        position: absolute;
+        top: 6px;
+        width: 10px;
+      }
+      
     }
     .field-label {
       display: none;
     }
     img{
       display:none;
-    }
-    a {
-      color: @default_blue;
-      display: block;
-      padding-left: 20px;
-      position: relative;
-    }
-    a:before{
-      background-image:url('../images/sprites.png');
-      background-position: -560px -604px;
-      background-repeat: no-repeat;
-      content: " ";
-      display: block;
-      height: 11px;
-      left: 0;
-      position: absolute;
-      top: 6px;
-      width: 10px;
-    }
+    }    
     .field-name-field-todo {
       padding-top: 0.5em;
       
