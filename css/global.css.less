@@ -857,9 +857,6 @@ div.ctools-modal-content a.close img{
 body.node-type-noticia a.print-page{
     background-color:transparent;
 }
-body.node-type-noticia a.print-page img{
-    display:block;
-}
 .block_left_wing,
 .block_right_wing {
   display: none;
@@ -2803,9 +2800,13 @@ body.node-type-product-display .field .field-label {
     height: 33px;
     margin: 0;
     width: 27px;
-}
-body.node-type-product-display a.print-page img {
-  display: none;
+    border:0 none;
+    padding:0;
+    float:right;
+    
+    img{
+      display:none;
+    }
 }
 .quicktabs-wrapper{
     margin-bottom:1em;
@@ -2912,6 +2913,15 @@ body.node-type-product-display .field-name-field-product .form-type-textfield {
       float: left;
       font-size:14px;
       font-weight: bold;
+      
+      .fieldset-legend{
+        background-image:none;
+        padding:0;
+        
+        a{
+          color:#000000;
+        }
+      }
     }
     .fieldset-wrapper {
       clear: both;
