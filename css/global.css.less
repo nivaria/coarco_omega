@@ -709,7 +709,7 @@ body.front #section-content{
   margin-top: 2px;
   padding: 0;
   text-indent: 16px;
-  width: 245px;
+  width: 205px;
 }
 #block-coarco-catalog-product-family-search .form-submit {
   background-color: transparent;
@@ -1163,16 +1163,16 @@ body.page-ofertas #region-sidebar-first .default_block,
   margin-bottom:6px;
 }
 .pinterest.node-product-display form.commerce-expandable-add-to-cart{
-   border-top: 1px solid #DBE1E6;
-    display: block;
-    left: 20px;
-    margin-top: 48px;
-    padding-top: 10px;
-    position: absolute;
-    width: 182px;
+  border-top: 1px solid #DBE1E6;
+  display: block;
+  left: 20px;
+  margin-top: 48px;
+  padding-top: 10px;
+  position: absolute;
+  width: 182px;
 }
 .pinterest.node-product-display.view-mode-pinterest_wide form.commerce-expandable-add-to-cart{
-  width:260px;
+  width: 260px;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-submit{
   background-image:url('../images/sprites.png');
@@ -1181,59 +1181,44 @@ body.page-ofertas #region-sidebar-first .default_block,
   display:block;
   width:186px;
   height:44px;
-    background-color: transparent;
-    border: 0 none;
-    color: #fff;
-    font-size: 15px;
-    text-align: left;
-    text-indent: 8px;
-    padding:0;
-    float:none;
-    padding-bottom:6px;
-    clear:both;
-    
-    
-    font-family:@title_default_font_fam;
-    font-size:14px;
-    font-weight:600;
-    line-height:120%;
-    color:rgb(255,255,255);
-    text-shadow:0px 1px 2px rgba(102,0,0,0.5);
+  background-color: transparent;
+  border: 0 none;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  text-indent: 8px;
+  padding:0;
+  float:none;
+  padding-bottom:6px;
+  clear:both;
+  font-family:@title_default_font_fam;
+  font-size:14px;
+  font-weight:600;
+  line-height:120%;
+  color:rgb(255,255,255);
+  text-shadow:0px 1px 2px rgba(102,0,0,0.5);
 }
-/*#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-submit:hover{
-  background-position: -20px -599px;
-  color:#fff;
-}*/
 #page .pinterest.view-mode-pinterest_wide.node-product-display form.commerce-expandable-add-to-cart .form-submit{
   width:260px;
   background-position: -695px -408px;
-    font-size: 16px;
-    text-align: center;
-    text-indent: 0;
-}
-/*#page .pinterest.view-mode-pinterest_wide.node-product-display form.commerce-expandable-add-to-cart .form-submit:hover{
-  background-position: -226px -598px;
-}*/
-#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper{
-  float:left;
+  font-size: 16px;
+  text-align: center;
+  text-indent: 0;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item{
-  margin-right: 1em;
   margin-top: 0;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item label{
   color:#000;
   font-family:@title_default_font_fam;
 }
-#page .pinterest.node-product-display.view-mode-pinterest_wide form.commerce-expandable-add-to-cart .form-wrapper .form-item select{
-  width: 172px;
-}
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item select{
-  width: 96px;
+  width: 100px;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity{
   float:left;
   margin-top:0;
+  margin-left: 0.5em;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity label{
   color:#000;
@@ -1241,6 +1226,43 @@ body.page-ofertas #region-sidebar-first .default_block,
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity .form-text{
   width:72px;
+}
+#page .pinterest.node-product-display form.commerce-expandable-add-to-cart .field-name-field-coarco-multiplier{
+  > div{
+    margin-top: 21px;
+    float: left;
+  }
+  .line-items-units-min{
+    float: left;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  .form-item-line-item-fields-field-coarco-multiplier-und-0-value{
+    float: left;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-right: 0;
+    label{
+      display: none;
+    }
+    input{
+      max-width: 43px;
+    }
+  }
+}
+#page .pinterest.node-product-display.view-mode-pinterest_wide form.commerce-expandable-add-to-cart{
+  .form-wrapper{
+    float:left;
+    .form-item{
+      margin-right: 0.5em;
+      .form-item select{
+        width: 89px;
+      }
+    }
+  }
+  .form-item-line-item-fields-field-coarco-multiplier-und-0-value input{
+    max-width: 43px;
+  }
 }
 .pinterest.node-product-display .field-name-field-product.field-type-commerce-product-reference{
   float: right;
@@ -2908,21 +2930,45 @@ body.node-type-product-display .ds-product-bottom .field-name-commerce-price{
 }
 body.node-type-product-display .field-name-field-product #edit-line-item-fields {
   float: left;
-  margin-left:0px;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 4px;
   padding:6px;
-}
-body.node-type-product-display .field-name-field-product #edit-line-item-fields select{
-  width:136px;
-}
-body.node-type-product-display .field-name-field-product #edit-line-item-fields .form-item {
-  margin: 0;
+  .field-name-field-units-box{
+    float: left;
+    margin-top: 8px;
+  }
+  .field-name-field-coarco-multiplier{
+    float: left;
+    margin-top: 29px;
+    margin-left: 0.5em;
+    .line-items-units-min{
+      float: left;
+      margin-top: 2px;
+    }
+    .form-item-line-item-fields-field-coarco-multiplier-und-0-value{
+      margin: 0;
+      padding: 0;
+      margin-left: 0.5em;
+      label{
+        display: none;
+      }
+      input{
+        width: 55px;
+      }
+    }
+  }
+  select{
+    width:136px;
+  }
+  .form-item {
+    margin: 0;
+  }
 }
 body.node-type-product-display .field-name-field-product .form-type-textfield {
   float: left;
-  margin: 4px 0 0;
-  padding:6px;
+  margin: 12px 0 0;
+  padding: 6px;
 }
 #page .group-descargar {
     background-color: #FFFFFF;
