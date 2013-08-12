@@ -65,7 +65,7 @@ h6 {
   font-family: @title_default_font_fam;
 }
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   color: #002a4e;
 }
 h2.node-title,
@@ -157,7 +157,7 @@ textarea:active {
     position: relative;
     text-transform: uppercase;
     width: auto;
-    padding-top:2px;
+    padding-top:0;
     font-size:12px;
 }
 .breadcrumb:after{
@@ -459,6 +459,9 @@ body.front #section-content{
   text-transform: uppercase;
   color: #004677;
 }
+#block-om-maximenu-om-maximenu-2{
+  line-height:24px; 
+}
 #block-coarco-generic-my-bookmarks-menu-block a,
 #block-coarco-generic-my-orders-menu-block a,
 #block-om-maximenu-om-maximenu-2 a {
@@ -605,14 +608,16 @@ body.front #section-content{
     display: block;
     margin-bottom:12px;
     padding-left: 35px;
-  position:relative;
+    position:relative;
+    padding-bottom:12px;
+    padding-top:6px;
 }
 .my-messages-menu:after{
   content:' ';
   display:block;
   position:absolute;
   left:0;
-  top:0;
+  top:2px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
    background-position: -549px -133px;
@@ -680,53 +685,63 @@ body.front #section-content{
   background-position: -327px -135px;
 }
 #block-coarco-catalog-product-family-search {
-  background-image: url(../images/sprites.png);
-  background-position: -208px -8px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  width: 504px;
-  height: 33px;
-  float: right;
-  margin-right: 14px;
-  margin-top: 95px;
-}
-#block-coarco-catalog-product-family-search .form-item-family-level1 {
-  float: left;
-  margin: 2px 0 0 2px;
-}
-#block-coarco-catalog-product-family-search .form-item-family-level1 select {
-    border: 0 none;
-    height: 29px;
-}
-#block-coarco-catalog-product-family-search .form-item-fulltext {
-  float: left;
-  margin: 0;
-}
-#block-coarco-catalog-product-family-search .form-item-fulltext input {
-  background-color: #fff;
-  border: 0 none;
-  height: 30px;
-  margin-top: 2px;
-  padding: 0;
-  text-indent: 16px;
-  width: 233px;
-}
-#block-coarco-catalog-product-family-search .form-submit {
-  background-color: transparent;
-  background-image: none;
-  border: 0 none;
-  color: #FFFFFF;
-  display: block;
-  font-family: @title_default_font_fam;
-  font-size: 15px;
-  font-weight: normal;
-  height: 33px;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  text-indent: 8px;
-  text-shadow: none;
-  width: 80px;
+    background-image: url(../images/sprites.png);
+    background-position: -208px -8px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 504px;
+    height: 33px;
+    float: right;
+    margin-right: 14px;
+    margin-top: 95px;
+  
+    .form-item-family-level1 {
+        float: left;
+        margin: 2px 0 0 2px;
+        height:30px;
+        background-color:#fff;
+        
+        select {
+          border: 0 none;
+          padding-top:6px;
+          option{
+            border-bottom:1px solid #dbe1e6;
+            padding:8px 4px;
+          }
+        }
+    }
+    .form-item-fulltext {
+        float: left;
+        margin: 0;
+        
+        input {
+          background-color: #fff;
+          border: 0 none;
+          height: 30px;
+          margin-top: 2px;
+          padding: 0;
+          text-indent: 16px;
+          width: 233px;
+          box-shadow:none;
+        }
+    }
+    .form-submit {
+        background-color: transparent;
+        background-image: none;
+        border: 0 none;
+        color: #FFFFFF;
+        display: block;
+        font-family: @title_default_font_fam;
+        font-size: 15px;
+        font-weight: normal;
+        height: 33px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        text-indent: 8px;
+        text-shadow: none;
+        width: 80px;
+    }
 }
 
 /* BEGIN slideshow home */
@@ -1076,9 +1091,11 @@ body.page-ofertas #region-sidebar-first .default_block,
 .pinterest.node-product-display {
   margin-right: 16px;
   padding: 20px;
-  padding: 20px 20px 32px;
   width: 180px;
   float: left;
+  .flag-throbber{
+    display:none;
+  }
 }
 .pinterest.node-product-display.view-mode-pinterest_wide{
     width:260px;
@@ -1211,23 +1228,32 @@ body.page-ofertas #region-sidebar-first .default_block,
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item label{
   color:#000;
   font-family:@title_default_font_fam;
+  font-weight:normal;
+  font-size:13px;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-wrapper .form-item select{
-  width: 100px;
+    width: 100%;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25) inset;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity{
-  float:left;
+  float:right;
   margin-top:0;
   margin-left: 0.5em;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity label{
   color:#000;
-  font-family:@title_default_font_fam;  
+  font-family:@title_default_font_fam;
+  font-weight:normal;
+  font-size:13px;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .form-item-quantity .form-text{
   width:72px;
 }
 #page .pinterest.node-product-display form.commerce-expandable-add-to-cart .field-name-field-coarco-multiplier{
+  #line-item-fields-field-coarco-multiplier-add-more-wrapper{
+    margin-left:24px;
+  }
   > div{
     margin-top: 21px;
     float: left;
@@ -1704,35 +1730,38 @@ body.node-type-equipo .field-type-file img,
   width: 100%;
   position:relative;
 }
-#coarco-empresas-ferreterias-isla-form .form-item {
-  display: inline;
-  margin: 0;
-}
-#coarco-empresas-ferreterias-isla-form #edit-location {
-  border: 0 none;
-  width: 163px;
-  background-color:transparent;
-}
-#coarco-empresas-ferreterias-isla-form .form-item-location{
-  position:relative;
-}
-#coarco-empresas-ferreterias-isla-form .form-item-location:after{
-  content:' ';
-  display:block;
-  position:absolute;
-  right: -65px;
-  top: 2px;
-  width:12px;
-  height:13px;
-  background-image:url('../images/sprites.png');
-  background-repeat:no-repeat;
-  background-position:-496px -48px; 
-}
-#coarco-empresas-ferreterias-isla-form .form-submit{
+#coarco-empresas-ferreterias-isla-form{
+  .form-item {
+    display: inline;
+    margin: 0;
+  }
+  #edit-location {
+    border: 0 none;
+    width: 163px;
+    background-color:transparent;
+    box-shadow:none;
+  }
+  .form-item-location{
+    position:relative;
+  }
+  .form-item-location:after{
+    content:' ';
+    display:block;
+    position:absolute;
+    right: -65px;
+    top: 2px;
+    width:12px;
+    height:13px;
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-496px -48px; 
+  }
+  .form-submit{
     padding-right: 16px;
     position: absolute;
     right: 3px;
     top: 3px;
+  }
 }
 
 /* END bloque Encuentra tu ferreteria */
@@ -1916,6 +1945,14 @@ tr.odd {
   select{
     width:84px;
   }
+  label{
+    font-size:13px;
+    font-weight:normal;
+  }
+  .line-items-units-min{
+      font-size:10px;
+      margin-top:4px;
+  }
 }
 #page table .views-field-add-to-cart-form .form-item-quantity,
 #page table .views-field-field-product .form-item-quantity{
@@ -1925,8 +1962,28 @@ tr.odd {
 #page table .views-field-field-product #edit-submit{
     
 }
-.view-product-express-search table td.views-field-title{
-  width:300px;
+.view-product-express-search{
+  table{
+    td.views-field-title{
+      width:300px;
+    }
+    #edit-line-item-fields-field-coarco-multiplier{
+      margin-top:0.5em;
+      
+      .line-items-units-min{
+          display:inline-block;
+          padding-right:0.5em;
+          vertical-align:top;
+      }
+      .form-item-line-item-fields-field-coarco-multiplier-und-0-value{
+          display:inline-block;
+          input{
+            margin-left:-28px;
+            width:95px;
+          }
+      }
+    }
+  }
 }
 /* END estilos tablas */
 
@@ -3892,4 +3949,9 @@ body.html textarea{
 td.views-field-commerce-price,
 .form-item-quantity input{
   text-align:right;
+}
+.view-product-search{
+  .view-filters{
+    float:right;
+  }
 }
