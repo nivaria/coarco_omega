@@ -1962,13 +1962,23 @@ tr.odd {
 #page table .views-field-field-product #edit-submit{
     
 }
-.view-product-express-search{
+#page .view-product-express-search{
   table{
     td.views-field-title{
       width:300px;
     }
+    #edit-line-item-fields{
+     margin-right:2px; 
+    }
+    #edit-line-item-fields-field-units-box{
+      float: left;
+      margin-right: 6px;
+    }
     #edit-line-item-fields-field-coarco-multiplier{
       margin-top:0.5em;
+      float: left;
+      margin-top: -2px;
+      width: 24px;
       
       .line-items-units-min{
           display:inline-block;
@@ -1977,9 +1987,12 @@ tr.odd {
       }
       .form-item-line-item-fields-field-coarco-multiplier-und-0-value{
           display:inline-block;
+          label{
+            display:none;
+          }
           input{
-            margin-left:-21px;
-            width:86px;
+            margin: 0;
+             width: 20px;
           }
       }
     }
