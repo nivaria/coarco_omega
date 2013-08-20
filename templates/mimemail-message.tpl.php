@@ -123,14 +123,14 @@ global $base_url;
 												</a>
 												</td>
 												<td valign="bottom" >
-													<a style="color:#0071B2" href="#"><?php print $private_area_link; ?></a>
+													<?php print $private_area_link; ?>
 												</td>
 												<td valign="bottom" >
-													<a style="color:#0071B2" href="#"><?php print $privacy_policy_link; ?></a>
+													<?php print $privacy_policy_link; ?>
 												</td>
 												<td valign="bottom" align="right">
 													<a style="color:#0071B2" href="tel:34922626540">+34 922 626 540</a><br /><br />
-													<a style="color:#0071B2" href="#"><?php print $contact_link; ?></a>
+													<?php print $contact_link; ?>
 												</td>                  
 											</tr>
 											<tr height="30" >
