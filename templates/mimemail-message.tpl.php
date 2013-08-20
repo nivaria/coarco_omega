@@ -78,7 +78,7 @@ global $base_url;
 				<table border="0" cellpadding="0" cellspacing="0" width="658">
 					<tr>
 						<td align="right" valign="center" height="34" width="658" colspan="3" >
-							<a href="http://www.coarco.es">www.coarco.es</a>
+							<a style="color:#0071B2" href="http://www.coarco.es">www.coarco.es</a>
 						</td>
 					</tr>
 					<tr>
@@ -102,7 +102,7 @@ global $base_url;
 									<td style="height:2px;line-height:2px;" align="center" cellpadding="0" cellspacing="0" valign="top" height="2" bgcolor="#bac5cb">&nbsp;</td>
 								</tr>
 								<tr>
-									<td align="center" valign="top" bgcolor="#fff" width="602">
+									<td align="left" valign="top" bgcolor="#fff" width="602">
 										<table border="0" cellpadding="0" cellspacing="0" id="content">
 											<tr>
 												<td valign="top" class="bodycontent"><?php print $body ?></td>
@@ -123,14 +123,14 @@ global $base_url;
 												</a>
 												</td>
 												<td valign="bottom" >
-													<a href="#"><?php print $private_area_link; ?></a>
+													<a style="color:#0071B2" href="#"><?php print $private_area_link; ?></a>
 												</td>
 												<td valign="bottom" >
-													<a href="#"><?php print $privacy_policy_link; ?></a>
+													<a style="color:#0071B2" href="#"><?php print $privacy_policy_link; ?></a>
 												</td>
 												<td valign="bottom" align="right">
-													<a href="tel:34922626540">+34 922 626 540</a><br /><br />
-													<a href="#"><?php print $contact_link; ?></a>
+													<a style="color:#0071B2" href="tel:34922626540">+34 922 626 540</a><br /><br />
+													<a style="color:#0071B2" href="#"><?php print $contact_link; ?></a>
 												</td>                  
 											</tr>
 											<tr height="30" >
