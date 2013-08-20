@@ -71,63 +71,86 @@ global $base_url;
     }
 	</style>
 </head>
-<body>
+<body style="background-color:#f4f4f2" >
 	<table border="0" cellpadding="0" cellspacing="0" width="100%" id="wrapper">
 		<tr>
-			<td align="center" valign="top" bgcolor="#FFF">
-				<table border="0" cellpadding="0" cellspacing="0" width="620">
+			<td align="center" valign="top" bgcolor="#f4f4f2">
+				<table border="0" cellpadding="0" cellspacing="0" width="658">
 					<tr>
-						<td align="center" valign="top" height="126" bgcolor="#00599C">
+						<td align="right" valign="center" height="34" width="658" colspan="3" >
+							<a href="http://www.coarco.es">www.coarco.es</a>
+						</td>
+					</tr>
+					<tr>
+						<td height="100%" width="28" bgcolor="#fff" >&nbsp;</td>
+						<td>
 							<table border="0" cellpadding="0" cellspacing="0" >
 								<tr>
-									<td width="620" height="120">
-										<a href="<?php print url(); ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                      <img style="margin-left:167px;" src="<?php print $base_url . '/'. path_to_theme();?>/images/logo-for-newsletter.png" alt="<?php print t('Home'); ?>" />
-                    </a>
+									<td align="center" valign="top" height="116" bgcolor="#fff">
+										<table border="0" cellpadding="0" cellspacing="0" >
+											<tr>
+												<td width="100%" height="116" align="center">
+													<a href="<?php print url(); ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+														<img src="<?php print $base_url . '/'. path_to_theme();?>/newsletter/images/logo-for-newsletter.png" alt="<?php print t('Home'); ?>" />
+													</a>
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td align="center" valign="top">
-							<table border="0" cellpadding="0" cellspacing="0" width="620" id="content">
 								<tr>
-									<td valign="top" style="padding:24px;" class="bodycontent"><?php print $body ?></td>
+									<td style="height:2px;line-height:2px;" align="center" cellpadding="0" cellspacing="0" valign="top" height="2" bgcolor="#bac5cb">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="center" valign="top" bgcolor="#fff" width="602">
+										<table border="0" cellpadding="0" cellspacing="0" id="content">
+											<tr>
+												<td valign="top" class="bodycontent"><?php print $body ?></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="height:2px;line-height:2px;" align="center" cellpadding="0" cellspacing="0" valign="top" height="2" bgcolor="#bac5cb">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="#fff" style="color:#FFF;text-decoration:none;">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%" >
+											<tr height="74" valign="center" >
+												<td valign="bottom" >
+													<a href="<?php print $base_url; ?>/home" title="<?php print t('Home'); ?>" rel="home" id="logo">
+														<img src="<?php print $base_url . '/'. path_to_theme();?>/newsletter/images/logo-footer-newsletter.png" alt="<?php print t('Home'); ?>" />
+												</a>
+												</td>
+												<td valign="bottom" >
+													<a href="#"><?php print $private_area_link; ?></a>
+												</td>
+												<td valign="bottom" >
+													<a href="#"><?php print $privacy_policy_link; ?></a>
+												</td>
+												<td valign="bottom" align="right">
+													<a href="tel:34922626540">+34 922 626 540</a><br /><br />
+													<a href="#"><?php print $contact_link; ?></a>
+												</td>                  
+											</tr>
+											<tr height="30" >
+												<td colspan="4" >&nbsp;</td>
+											</tr>
+										</table>
+									</td>
 								</tr>
 							</table>
 						</td>
+						<td height="100%" width="28" bgcolor="#fff" >&nbsp;</td>
 					</tr>
 					<tr>
-						<td align="center" valign="top" bgcolor="#00599C" style="color:#FFF;text-decoration:none;">
-							<table border="0" cellpadding="0" cellspacing="0" width="620">
-								<tr height="86">
-									<td width="125">
-										<a href="<?php print $base_url; ?>/home" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                      <img style="margin-left:20px;" src="<?php print $base_url . '/'. path_to_theme();?>/images/logo-footer-newsletter.png" alt="<?php print t('Home'); ?>" />
-                    </a>
-                  </td>
-                  <td width="300">
-                    <ul>
-                      <li><?php print $private_area_link; ?></li>
-                      <li><?php print $privacy_policy_link; ?></li>
-                    </ul>
-									</td>
-                  <td>
-                    <ul style="list-style-type:none;">
-                      <li>+34 922 626 540</li>
-                      <li><?php print $contact_link; ?></li>
-                    </ul>
-									</td>                  
-								</tr>
-							</table>
-						</td>
+						<td width="658" height="12" colspan="3" style="height:12px;line-height:12px;" ><img src="<?php print $base_url . '/'. path_to_theme();?>/newsletter/images/bottom_shadow_newsletter.png" /></td>
 					</tr>
-          <tr>
-            <td width="620" height="50" align="right" bgcolor="#FFF">
-              <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/project-by-nivaria-sgrey.png" alt="Nivaria" /></a>
-            </td>                  
-          </tr>
+					<tr>
+						<td width="658" height="40" align="right" valign="center" colspan="3" >
+							<a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/newsletter/images/project-by-nivaria-sgrey.png" alt="Nivaria" /></a>
+						</td>                  
+					</tr>
 				</table>
 			</td>
 		</tr>
