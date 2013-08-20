@@ -3517,7 +3517,7 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
     color: #444444;
     display: inline;
     font-family: arial;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
     padding-right: 0;
 }
@@ -3580,24 +3580,42 @@ body.node-type-empresa #block-views-sucursales-block .views-field-field-nombre-c
 }
 
 /* BEGIN views product-compact-list */
-.product-compact-list tr span.image,
-.product-compact-list tr span.code {
-  float:left;
-  padding-right:8px;
-  padding-bottom:2em;
+.product-compact-list{
+  tr{
+    span.image,
+    span.code {
+      float:left;
+      padding-right:8px;
+      padding-bottom:2em;
+    }
+    a span.code {
+      color: #444;
+    }
+    span.code{
+      display: block;
+      float: none;
+      font-weight: normal;
+      padding-bottom: 0;
+      width: 100%;
+    }
+    span.datos_tecnicos{
+      color:#666;
+      font-size:12px;
+      font-weight:normal;
+    }
+    span.title {
+      display:block;
+    }
+  }
+  tr.not-offer span.field-pvp-recomendado {
+    display: none !important;
+  }
+  #edit-search-api-views-fulltext{
+    width:208px;
+  }
 }
-.product-compact-list tr a span.code {
-  color: #444;
-}
-.product-compact-list tr span.title {
-  display:block;
-}
-.product-compact-list tr.not-offer span.field-pvp-recomendado {
-  display: none !important;
-}
-.product-compact-list #edit-search-api-views-fulltext{
-  width:208px;
-}
+/* END views product-compact-list */
+
 body.page-pedido-express #region-content .region-inner{
   position:relative;
 }
