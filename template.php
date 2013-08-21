@@ -66,7 +66,7 @@ function coarco_omega_preprocess_mimemail_message(&$variables) {
     array(
       'language' => $language,
       'attributes' => array(
-          'style' => 'color:#FFF;text-decoration:none',
+          'style' => 'color:#0071b2;text-decoration:none',
       )
     )
   );  
@@ -75,7 +75,7 @@ function coarco_omega_preprocess_mimemail_message(&$variables) {
     array(
       'language' => $language,
       'attributes' => array(
-          'style' => 'color:#FFF;text-decoration:none',
+          'style' => 'color:#0071b2;text-decoration:none',
       )
     )
   );  
@@ -84,7 +84,7 @@ function coarco_omega_preprocess_mimemail_message(&$variables) {
     array(
       'language' => $language,
       'attributes' => array(
-          'style' => 'color:#FFF;text-decoration:none',
+          'style' => 'color:#0071b2;text-decoration:none',
       )
     )
   );  
