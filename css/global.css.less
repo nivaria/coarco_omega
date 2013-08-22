@@ -1159,6 +1159,13 @@ body.not-front .pinterest.node-product-display{
   float: left;
   padding-right: 0.2em;
 }
+.pinterest.node-product-display .field-type-field-collection .field-item:before {
+	content:',';
+}
+.pinterest.node-product-display .field-type-field-collection .field-item:first-child:before {
+	content:none;
+	display:none;
+}
 .pinterest.node-product-display .ds-bottom{
   clear:both;
 }
