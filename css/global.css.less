@@ -1158,13 +1158,23 @@ body.not-front .pinterest.node-product-display{
 .pinterest.node-product-display .field-type-field-collection .field-item {
   float: left;
   padding-right: 0.2em;
+	position:relative;
+	padding-left:8px;
+}
+.pinterest.node-product-display .field-type-field-collection .field-item .field-item{
+	padding-left:0;
 }
 .pinterest.node-product-display .field-type-field-collection .field-item:before {
 	content:',';
+	position:absolute;
+	display:block;
+	bottom:0;
+	left:0;
 }
 .pinterest.node-product-display .field-type-field-collection .field-item:first-child:before {
 	content:none;
 	display:none;
+	padding-left:0;
 }
 .pinterest.node-product-display .ds-bottom{
   clear:both;
