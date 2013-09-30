@@ -24,51 +24,55 @@ global $base_url;
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><?php print $subject ?></title>
 	<style type="text/css">
-		/* Client-specific Styles */
-		#outlook a {padding: 0;}  /* Force Outlook to provide a "view in browser" button. */
-		body {
-      width: 100% !important;
-    }
-		.ReadMsgBody {
-      width: 100%;
-    }
-		.ExternalClass {
-      width: 100%;
-    } /* Force Hotmail to display emails at full width */
-		body {
-      -webkit-text-size-adjust: none;
-    } /* Prevent Webkit platforms from changing default text sizes. */
-		/* Reset Styles */
-		body {
-      margin: 0;
-      padding: 0;
-      font-family: arial;
-      font-size: 14px;
-      color: #666666;
-    }
-		img {
-      border: 0;
-      height: auto;
-      line-height: 100%;
-      outline: none;
-      text-decoration: none;
-    }
-		table td {
-      border-collapse: collapse;
-    }
-		ul {
-			padding-left:0;
-		}
-		li {
-			line-height:24px;
-		}
-		a {
-			color: #0071B2;
-			text-decoration:none;
-		}
-    table td.bodycontent {
-      padding: 24px;
-    }
+  /* Client-specific Styles */
+  #outlook a {padding: 0;}  /* Force Outlook to provide a "view in browser" button. */
+  body {
+    width: 100% !important;
+  }
+  .ReadMsgBody {
+    width: 100%;
+  }
+  .ExternalClass {
+    width: 100%;
+  } /* Force Hotmail to display emails at full width */
+  body {
+    -webkit-text-size-adjust: none;
+  } /* Prevent Webkit platforms from changing default text sizes. */
+  /* Reset Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 14px;
+    color: #444;
+    line-height: 21px;
+  }
+  img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+  table td {
+    border-collapse: collapse;
+  }
+  ul {
+    padding-left:0;
+  }
+  li {
+    line-height:24px;
+  }
+  a {
+    color: #0071B2;
+    text-decoration:none;
+  }
+  table td.bodycontent {
+    padding: 24px;
+  }
+  table td.bodycontent table {
+    font-size: 13px;
+  }
 	</style>
 </head>
 <body style="background-color:#f4f4f2" >
