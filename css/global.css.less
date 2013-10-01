@@ -937,7 +937,7 @@ body.page-ofertas #region-sidebar-first .default_block,
     padding: 0 12px 12px;
 }
 .ofertas_block .block-inner{
-    background-image:url('../images/offers_block_bg.png');
+    /*background-image:url('../images/offers_block_bg.png');
     background-repeat:repeat;
     color: #FFFFFF;
     font-family: @title_default_font_fam;
@@ -945,7 +945,7 @@ body.page-ofertas #region-sidebar-first .default_block,
     margin-right: -30px;
     padding: 10px 38px;
     position: relative;
-    padding-bottom:0;
+    padding-bottom:0;*/
 }
 #block-nodeblock-32549.ofertas_block .block-inner{
   padding:10px 14px 0;
@@ -955,7 +955,7 @@ body.page-ofertas #region-sidebar-first .default_block,
     background-position: -3px -130px;
     background-repeat: no-repeat;
     border-bottom: 1px solid #FFFFFF;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 46px;
     margin-bottom: 0.2em;
@@ -970,6 +970,41 @@ body.page-ofertas #region-sidebar-first .default_block,
   text-indent:0;
   border:0 none;
 }
+
+/* bloque ofertas */
+#block-nodeblock-1082{
+  .block-inner{
+    h2:before{
+      width:50px;
+      height:50px;
+      content:' ';
+      background-repeat:no-repeat;
+      background-image:url('../images/sprites.png');
+      background-position: -164px -250px;
+    }
+    h2:before:hover{
+      background-position: -164px -304px;      
+    }
+  }
+}
+/* bloque liquidaciones */
+#block-nodeblock-32549{
+  .block-inner{
+    h2:before{
+      width:50px;
+      height:50px;
+      content:' ';
+      background-repeat:no-repeat;
+      background-image:url('../images/sprites.png');
+      background-position: -226px -250px;
+    }
+    h2:before:hover{
+      background-position: -226px -304px;
+    }
+  }
+}
+
+
 #region-sidebar-first .ofertas_block .block-inner h2{
     font-size: 24px;
     line-height: 48px;
@@ -996,8 +1031,12 @@ body.page-ofertas #region-sidebar-first .default_block,
 }
 .ofertas_block .block-inner h2,
 .ofertas_block .block-inner a{
-    color:#fff;
+    color:#F03F13;
     font-family:@title_default_font_fam;
+}
+.ofertas_block .block-inner h2:hover,
+.ofertas_block .block-inner a:hover{
+  color:#00599C;
 }
 .ofertas_block .block-inner .field-name-body{
     font-weight:bold;
