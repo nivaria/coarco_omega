@@ -951,16 +951,18 @@ body.page-ofertas #region-sidebar-first .default_block,
   padding:10px 14px 0;
 }
 .ofertas_block .block-inner h2{
-    background-image:url('../images/sprites.png');
+    /*background-image:url('../images/sprites.png');
     background-position: -3px -130px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     border-bottom: 1px solid #FFFFFF;
     font-size: 20px;
     font-weight: bold;
-    line-height: 46px;
+    line-height: 28px;
     margin-bottom: 0.2em;
     padding-bottom: 0.2em;
-    text-indent: 47px;
+    text-indent: 0;
+    position:relative;
+    padding-left:62px;
 }
 #node-32549{
   position:static;
@@ -974,6 +976,12 @@ body.page-ofertas #region-sidebar-first .default_block,
 /* bloque ofertas */
 #block-nodeblock-1082{
   .block-inner{
+    h2{
+          color:#F03F13;
+    }
+    h2:hover{
+          color:#00599C;    
+    }
     h2:before{
       width:50px;
       height:50px;
@@ -981,6 +989,10 @@ body.page-ofertas #region-sidebar-first .default_block,
       background-repeat:no-repeat;
       background-image:url('../images/sprites.png');
       background-position: -164px -250px;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
     }
     h2:before:hover{
       background-position: -164px -304px;      
@@ -990,6 +1002,13 @@ body.page-ofertas #region-sidebar-first .default_block,
 /* bloque liquidaciones */
 #block-nodeblock-32549{
   .block-inner{
+    
+    h2:hover{
+          color:#F03F13;
+    }
+    h2{
+          color:#00599C;    
+    }
     h2:before{
       width:50px;
       height:50px;
@@ -997,6 +1016,10 @@ body.page-ofertas #region-sidebar-first .default_block,
       background-repeat:no-repeat;
       background-image:url('../images/sprites.png');
       background-position: -226px -250px;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
     }
     h2:before:hover{
       background-position: -226px -304px;
@@ -1011,7 +1034,7 @@ body.page-ofertas #region-sidebar-first .default_block,
     margin-bottom: 0.4em;
     padding-bottom: 0;
 }
-.ofertas_block .block-inner h2:after{
+/*.ofertas_block .block-inner h2:after{
     content:' ';
     background-image:url('../images/sprites.png');
     background-position:-605px -142px;
@@ -1025,7 +1048,7 @@ body.page-ofertas #region-sidebar-first .default_block,
 }
 #block-nodeblock-32549.ofertas_block .block-inner h2:after{
   right:12px;
-}
+}*/
 #region-sidebar-first .ofertas_block .block-inner h2:after{
     top:24px;
 }
