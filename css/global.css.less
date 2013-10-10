@@ -2607,6 +2607,10 @@ body.node-type-product-display .ds-product-center .field-name-field-expand-felle
   font-size:12px;
   color:#ddd;
 }
+.no-stock .field-name-commerce-stock .stock_text:before{
+  background-position: -784px -138px;
+  display:block;
+}
 .low-stock .field-name-commerce-stock .stock_text:before {
   background-position:-740px -138px;
   display:block;
@@ -2615,8 +2619,16 @@ body.node-type-product-display .ds-product-center .field-name-field-expand-felle
   background-position: -761px -138px;
   display:block;
 }
-.no-stock .field-name-commerce-stock .stock_text:before{
+.view-mode-pinterest.no-stock .field-name-commerce-stock .stock_text:before{
   background-position: -784px -138px;
+  display:block;
+}
+.view-mode-pinterest.low-stock .field-name-commerce-stock .stock_text:before {
+  background-position:-740px -138px;
+  display:block;
+}
+.view-mode-pinterest.with-stock .field-name-commerce-stock .stock_text:before {
+  background-position: -761px -138px;
   display:block;
 }
 
